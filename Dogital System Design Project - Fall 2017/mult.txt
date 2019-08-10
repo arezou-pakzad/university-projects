@@ -1,0 +1,27 @@
+<<Input
+    s
+    in1
+    in2
+    >>
+*INIT
+INIT:
+    NOP/
+	check('s')?
+	NOP->INIT
+	load('R1','in1')
+	load('R2','in2')
+	load('R3',0)
+	load('E',0)->CMP
+CMP:
+    NOP/
+	G('R1', 'R2')?
+	NOP->MUL
+	load('R1','R2')
+	load('R2','R1')->MUL
+MUL:
+    NOP/
+	OR('R1')?
+	load('E',1)
+	load('R4','R3')->INIT
+	add('R1','R1',-1)
+	add('R3','R3','R2')->MUL

@@ -1,0 +1,23 @@
+<<Input
+    s
+    in1
+    in2
+    >>
+*INIT
+INIT:
+    NOP/
+    check('s')?
+    NOP->INIT
+    load('R1', 'in1')
+    load('R2', 'in2')
+    load('R3', 0)
+    load('E', 0)->MUL
+MUL:
+    load('R1', shl('R1', 1))
+    load('R2', shr('R2', 1))/
+    OR('R2')?
+    load('E', 1)
+    load('R4', 'R3')->INIT
+    getBit('R2', 0)?
+    NOP->MUL
+    add('R3', 'R3', 'R1')->MUL

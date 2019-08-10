@@ -1,0 +1,39 @@
+<<input
+	in
+	s
+	>>
+*INIT
+INIT:
+	NOP/
+	check('s')?
+	NOP->INIT
+	load('A', 'in')
+	load('G', 0.5)
+	load('E', 0)
+	load('R1', 0.5)
+	load('R2', 0.5)
+	load('G2', 0)
+	load('i', 0.5)->MUL
+MUL:
+	load('R1', shl('R1', 1))
+	load('R2', shr('R2', 1))/
+	OR('R2')?
+	NOP->CHECK1
+	getBit('R2', 0)?
+	NOP->MUL
+	add('G2', 'G2', 'R1')->MUL
+CHECK1:
+	load('i', shr('i', 1))/
+	G('A', 'G2')?
+	sub('G', 'G', 'i')->CHECK2
+	NOP->CHECK2
+CHECK2:
+	NOP/
+	G('i', 0.00195312)?
+	load('E', 1)
+	load('out', 'G')->INIT
+	add('G', 'G', 'i')->CHECK3
+CHECK3:
+	load('R1', 'G')
+	load('R2', 'G')
+	load('R3', 0)->MUL
