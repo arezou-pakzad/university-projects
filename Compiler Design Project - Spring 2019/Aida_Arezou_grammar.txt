@@ -1,0 +1,142 @@
+Program -> DeclarationList eof 
+
+DeclarationList -> DeclarationList_1 
+
+DeclarationList_1 -> Declaration DeclarationList_1
+                    EPSILON
+
+Declaration -> TypeSpecifier TypeSpecifier_function 
+
+TypeSpecifier_function -> ID ID_Function 
+
+ID_Function -> ID_Array_define
+        |( Params ) CompoundStmt 
+
+
+ID_Array_define -> ;
+        |[ NUM ] ; 
+
+TypeSpecifier -> void
+                |int 
+
+Params -> int Param_type_specifier ParamList_1
+         |voID VoID_params 
+
+VoID_params -> Param_type_specifier ParamList_1
+         EPSILON
+
+ParamList -> Param ParamList_1 
+
+ParamList_1 -> , Param ParamList_1
+              EPSILON
+
+Param -> TypeSpecifier Param_type_specifier 
+
+Param_type_specifier -> ID ID_array_param 
+
+ID_array_param ->
+        |[ ] 
+
+CompoundStmt -> { DeclarationList StatementList } 
+
+StatementList -> StatementList_1 
+
+StatementList_1 -> Statement StatementList_1
+                  EPSILON
+
+Statement -> ExpressionStmt
+            |CompoundStmt
+            |SelectionStmt
+            |IterationStmt
+            |ReturnStmt
+            |SwitchStmt .
+
+ExpressionStmt -> Expression ;
+                 |continue ;
+                 |break ;
+                 |; 
+
+SelectionStmt -> if ( Expression ) Statement else Statement 
+
+IterationStmt -> while ( Expression ) Statement 
+
+ReturnStmt -> return Function_return 
+
+Function_return ->;|Expression ; 
+
+SwitchStmt -> switch ( Expression ) { CaseStmts DefaultStmt } 
+
+CaseStmts -> case num : StatementList CaseStmts_1 |
+             EPSILON
+
+CaseStmts_1 -> CaseStmt CaseStmts_1 |
+              EPSILON
+
+CaseStmt -> case NUM : StatementList 
+
+DefaultStmt -> default : StatementList |
+              EPSILON
+
+Expression -> ID Expression_ID_start
+             |Term_2 Expression_addop_op_start Expression_relop 
+			 
+Expression_ID_start -> ID_array Expression_ID_start_1
+        |( Args ) Term_1 Expression_addop_op_start Expression_relop 
+
+Expression_ID_start_1 -> = Expression
+          | Term_1 Expression_addop_op_start Expression_relop 
+
+
+ID_array -> EPSILON
+      |[ Expression ] 
+
+
+Expression_relop -> Relop Expression_addop |
+                      EPSILON
+
+Relop -> <
+        |== 
+
+Expression_addop -> Term Expression_addop_op_start 
+
+Expression_addop_op_start -> Addop Term Expression_addop_op_start |
+                       EPSILON
+
+Addop -> +
+        |- 
+
+Term -> SignedFactor Term_1 
+
+Term_1 -> * SignedFactor Term_1 |
+         EPSILON 
+
+Term_2 -> SignedFactor_no_ID Term_1 
+
+
+
+
+Factor -> ( Expression )
+         |ID ID_array_3
+         |NUM 
+
+Factor_no_ID -> ( Expression )
+         |NUM 
+		 
+SignedFactor -> Factor
+               |+ Factor
+               |- Factor 
+
+SignedFactor_no_ID -> Factor_no_ID
+               |+ Factor
+               |- Factor 
+
+ID_array_3 -> ID_array
+        |( Args ) 
+
+Args -> ArgList |
+       EPSILON
+
+ArgList -> Expression ArgList_1 
+
+ArgList_1 -> , Expression ArgList_1 |
+            EPSILON

@@ -1,0 +1,42 @@
+program -> declaration-list EOF
+declaration-list -> declaration declaration-list | EPSILON
+declaration ->  type-specifier ID I
+I -> var-declaration | fun-declaration
+var-declaration -> A
+A -> ; | [ NUM ] ;
+type-specifier -> int | void
+fun-declaration -> ( params ) compound-stmt
+params -> param-list | void
+param-list -> param , param-list | param
+param -> type-specifier ID B
+B -> [  ] | EPSILON
+compound-stmt -> { declaration-list statement-list }
+statement-list -> statement statement-list | EPSILON
+statement -> expression-stmt | compound-stmt | selection-stmt | iteration-stmt | return-stmt | switch-stmt
+expression-stmt -> expression ; | continue ; | break ; | ;
+selection-stmt -> if ( expression ) statement else statement
+iteration-stmt -> while ( expression ) statement
+return-stmt -> return C
+C -> ; | expression ;
+switch-stmt -> switch ( expression ) { case-stmts default-stmt }
+case-stmts -> case-stmts case-stmts | EPSILON
+case-stmt -> case NUM : statement-list
+default-stmt -> default : statement-list | EPSILON
+expression -> ID D = expression | simple-expression
+D -> [ expression ] | EPSILON
+simple-expression -> additive-expression E
+E -> relop additive-expression | EPSILON
+relop -> < | ==
+additive-expression -> term F
+F -> addop additive-expression | EPSILON
+addop -> + | -
+term -> signed-factor G
+G -> * term | EPSILON
+signed-factor -> factor | + factor | - factor
+factor -> ( expression ) | ID J | NUM
+J -> var | call
+var -> D
+call -> ( args)
+args -> arg-list | EPSILON
+arg-list -> expression H
+H -> , arg-list | EPSILON

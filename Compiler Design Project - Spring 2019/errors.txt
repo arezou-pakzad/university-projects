@@ -1,0 +1,5 @@
+Lexical Errors:
+
+
+Parser Errors:
+6. (Syntax Error! Missing num)
