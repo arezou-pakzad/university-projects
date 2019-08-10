@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>
+Results
+</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script type='text/javascript'>
+function toggle(item) {
+obj=document.getElementById(item);
+visible=(obj.style.display!="none")
+key=document.getElementById("ctrl_" + item);
+if (visible) {
+    obj.style.display="none";
+key.innerHTML="[+] Show genes";
+}
+else {
+obj.style.display="block";
+key.innerHTML="[-] Hide genes";
+}
+}
+</script>
+</head>
+<body>
+<p><center><b>
+gene onthology analysis
+</b></center></p>
+<table border="1" width="80%" id="tab:pval_legend" align=center>
+<CAPTION><EM>P-value color scale</EM></CAPTION>
+<tr>
+	<td  width=140 align=center> > 10<sup>-3</sup></td>
+	<td  width=140 align=center bgcolor='#FFFFCC'> 10<sup>-3</sup> to 10<sup>-5</sup></td>
+	<td  width=140 align=center bgcolor='#FFCC66'> 10<sup>-5</sup> to 10<sup>-7</sup></td>
+	<td  width=140 align=center bgcolor='#FF9900'> 10<sup>-7</sup> to 10<sup>-9</sup></td>
+	<td  width=140 align=center bgcolor='#FF3300'> < 10<sup>-9</sup></td>
+</tr >
+</table>
+<MAP NAME='goPathImage'>
+<AREA SHAPE='RECT' COORDS='27,309,144,357' HREF='#0019207' ALT=''>
+<AREA SHAPE='RECT' COORDS='32,406,139,469' HREF='#0019887' ALT=''>
+<AREA SHAPE='RECT' COORDS='57,102,140,165' HREF='#0098772' ALT=''>
+<AREA SHAPE='RECT' COORDS='23,213,148,261' HREF='#0030234' ALT=''>
+<AREA SHAPE='RECT' COORDS='279,309,385,357' HREF='#0008092' ALT=''>
+<AREA SHAPE='RECT' COORDS='280,413,384,461' HREF='#0015631' ALT=''>
+<AREA SHAPE='RECT' COORDS='172,213,255,261' HREF='#0003682' ALT=''>
+<AREA SHAPE='RECT' COORDS='5,517,165,597' HREF='#0016538' ALT=''>
+<AREA SHAPE='RECT' COORDS='156,5,42,29' HREF='#0003674' ALT=''>
+<AREA SHAPE='RECT' COORDS='177,109,249,157' HREF='#0005488' ALT=''>
+<AREA SHAPE='RECT' COORDS='285,533,379,581' HREF='#0008017' ALT=''>
+<AREA SHAPE='RECT' COORDS='279,213,385,261' HREF='#0005515' ALT=''>
+</MAP>
+<p align="center"><img border="0" src="GOFUNCTION.png" usemap='#goPathImage' ALT=''></p>
+<p>&nbsp;</p>
+<table border='1' width='100%' id='table1'>
+	<tr>
+		<td Align=center ><b>GO term</b></td>
+		<td Align=center><b>Description</b></td>
+		<td width=120 Align=center><b><a href='#p_value_info'>P-value</a></b></td> 
+		<td width=120 Align=center><b><a href='#fdr_info'>FDR q-value</a></b></td> 
+		<td width=230 Align=center><b><a href='#enrich_info'> Enrichment (N, B, n, b) </a></b> </td>
+		<td Align=center><b><a href='#genes_info'> Genes </a></b></td>
+	</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0003682&amp;view=details' target="_blank">GO:0003682</a><a name=0003682></a></td>
+<td>chromatin binding</td>
+<td  align=center>3.36E-6</td>
+<td  align=center>6.06E-3</td>
+<td  align=center>2.38 (1285,74,241,33)</td>
+<td>
+<a id="ctrl_elements_GO:0003682" href="javascript:toggle('elements_GO:0003682')">[+] Show genes</a><br>
+<div id="elements_GO:0003682" style="display:none"> <font size=1>
+CDK1  -  cyclin-dependent kinase 1<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+HIST1H1B  -  histone cluster 1, h1b<br>
+HIST2H3D  -  histone cluster 2, h3d<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+UHRF1  -  ubiquitin-like with phd and ring finger domains 1<br>
+HIST1H3H  -  histone cluster 1, h3h<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+CHAF1B  -  chromatin assembly factor 1, subunit b (p60)<br>
+NCAPH  -  non-smc condensin i complex, subunit h<br>
+GMNN  -  geminin, dna replication inhibitor<br>
+KIAA0101  -  kiaa0101<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+WDHD1  -  wd repeat and hmg-box dna binding protein 1<br>
+CDC45  -  cell division cycle 45<br>
+MEIS1  -  meis homeobox 1<br>
+TICRR  -  topbp1-interacting checkpoint and replication regulator<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+BRIP1  -  brca1 interacting protein c-terminal helicase 1<br>
+RCC1  -  regulator of chromosome condensation 1<br>
+GATA2  -  gata binding protein 2<br>
+WHSC1  -  wolf-hirschhorn syndrome candidate 1<br>
+DNMT3B  -  dna (cytosine-5-)-methyltransferase 3 beta<br>
+H2AFY  -  h2a histone family, member y<br>
+CHAF1A  -  chromatin assembly factor 1, subunit a (p150)<br>
+RAD51  -  rad51 recombinase<br>
+BAHCC1  -  bah domain and coiled-coil containing 1<br>
+POLQ  -  polymerase (dna directed), theta<br>
+EZH2  -  enhancer of zeste homolog 2 (drosophila)<br>
+ATAD2  -  atpase family, aaa domain containing 2<br>
+MPO  -  myeloperoxidase<br>
+EXO1  -  exonuclease 1<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0016538&amp;view=details' target="_blank">GO:0016538</a><a name=0016538></a></td>
+<td>cyclin-dependent protein serine/threonine kinase regulator activity</td>
+<td  align=center>5.99E-5</td>
+<td  align=center>5.4E-2</td>
+<td  align=center>3.16 (1285,10,407,10)</td>
+<td>
+<a id="ctrl_elements_GO:0016538" href="javascript:toggle('elements_GO:0016538')">[+] Show genes</a><br>
+<div id="elements_GO:0016538" style="display:none"> <font size=1>
+CCNA1  -  cyclin a1<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+CCNA2  -  cyclin a2<br>
+CCNB1  -  cyclin b1<br>
+CCNB2  -  cyclin b2<br>
+CCNE2  -  cyclin e2<br>
+CKS2  -  cdc28 protein kinase regulatory subunit 2<br>
+CKS1B  -  cdc28 protein kinase regulatory subunit 1b<br>
+CCNE1  -  cyclin e1<br>
+CDKN2C  -  cyclin-dependent kinase inhibitor 2c (p18, inhibits cdk4)<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0008017&amp;view=details' target="_blank">GO:0008017</a><a name=0008017></a></td>
+<td>microtubule binding</td>
+<td  align=center>5.76E-4</td>
+<td  align=center>3.46E-1</td>
+<td  align=center>2.06 (1285,29,452,21)</td>
+<td>
+<a id="ctrl_elements_GO:0008017" href="javascript:toggle('elements_GO:0008017')">[+] Show genes</a><br>
+<div id="elements_GO:0008017" style="display:none"> <font size=1>
+PRC1  -  protein regulator of cytokinesis 1<br>
+KIF14  -  kinesin family member 14<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+PLK1  -  polo-like kinase 1<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CENPE  -  centromere protein e, 312kda<br>
+KIF18A  -  kinesin family member 18a<br>
+KIF15  -  kinesin family member 15<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+KIF20A  -  kinesin family member 20a<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+SPAG5  -  sperm associated antigen 5<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+KIF4B  -  kinesin family member 4b<br>
+KIF23  -  kinesin family member 23<br>
+KIF4A  -  kinesin family member 4a<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+</table>
+<p>Species used: Homo sapiens</p><p>The system has recognized 1366 genes out of 1388 gene terms entered by the user.<br> 1365 genes were recognized by gene symbol and 1 genes by other gene IDs .<br>Only 1285 of these genes are associated with a GO term.<br></p>
+<p> The GOrilla database is periodically updated using the <a href='http://www.geneontology.org/'>GO database</a> and other sources.<br>
+The GOrilla database was last updated on Jul 6, 2019</p>
+<p>This results page will be available on this site for one month from now (until 
+Aug 10, 2019
+). You can bookmark this page and come back to it later.
+</p>
+<a name='p_value_info'></a><br><b>'P-value'</b> is the enrichment p-value computed according to the mHG or HG model. This p-value is not corrected for multiple testing of 1804 GO terms.<br>
+<a name='fdr_info'></a><br><b>'FDR q-value'</b> is the correction of the above p-value for multiple testing using the Benjamini and Hochberg (1995) method. <br>Namely, for the i<sup>th</sup> term (ranked according to p-value) the FDR q-value is (p-value * number of GO terms) / i. <br>
+<a name='enrich_info'></a><br><b>Enrichment (N, B, n, b)</b> is defined as follows:<br>N - is the total number of genes<br>B - is the total number of genes associated with a specific GO term<br>n - is the number of genes in the top of the user's input list or in the target set when appropriate<br>b - is the number of genes in the intersection<br>Enrichment = (b/n) / (B/N)<br>
+<a name='genes_info'></a><br><b>Genes:</b> For each GO term you can see the list of associated genes that appear in the optimal top of the list.<br>Each gene name is specified by gene symbol followed by a short description of the gene <br>
+<p>
+<a href='http://cbl-gorilla.cs.technion.ac.il/'> Back to the GOrilla main page </a>
+</p>
+</body>
+</html>

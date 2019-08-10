@@ -1,0 +1,1951 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>
+Results
+</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script type='text/javascript'>
+function toggle(item) {
+obj=document.getElementById(item);
+visible=(obj.style.display!="none")
+key=document.getElementById("ctrl_" + item);
+if (visible) {
+    obj.style.display="none";
+key.innerHTML="[+] Show genes";
+}
+else {
+obj.style.display="block";
+key.innerHTML="[-] Hide genes";
+}
+}
+</script>
+</head>
+<body>
+<p><center><b>
+gene onthology analysis
+</b></center></p>
+<table border="1" width="80%" id="tab:pval_legend" align=center>
+<CAPTION><EM>P-value color scale</EM></CAPTION>
+<tr>
+	<td  width=140 align=center> > 10<sup>-3</sup></td>
+	<td  width=140 align=center bgcolor='#FFFFCC'> 10<sup>-3</sup> to 10<sup>-5</sup></td>
+	<td  width=140 align=center bgcolor='#FFCC66'> 10<sup>-5</sup> to 10<sup>-7</sup></td>
+	<td  width=140 align=center bgcolor='#FF9900'> 10<sup>-7</sup> to 10<sup>-9</sup></td>
+	<td  width=140 align=center bgcolor='#FF3300'> < 10<sup>-9</sup></td>
+</tr >
+</table>
+<MAP NAME='goPathImage'>
+<AREA SHAPE='RECT' COORDS='1173,525,1272,573' HREF='#0044451' ALT=''>
+<AREA SHAPE='RECT' COORDS='508,630,623,693' HREF='#0031261' ALT=''>
+<AREA SHAPE='RECT' COORDS='917,197,1003,245' HREF='#0070938' ALT=''>
+<AREA SHAPE='RECT' COORDS='528,525,624,573' HREF='#0032993' ALT=''>
+<AREA SHAPE='RECT' COORDS='5,525,77,573' HREF='#0005634' ALT=''>
+<AREA SHAPE='RECT' COORDS='900,637,988,685' HREF='#0005874' ALT=''>
+<AREA SHAPE='RECT' COORDS='1003,525,1149,573' HREF='#0044454' ALT=''>
+<AREA SHAPE='RECT' COORDS='1296,525,1389,573' HREF='#0005654' ALT=''>
+<AREA SHAPE='RECT' COORDS='147,406,285,469' HREF='#0043231' ALT=''>
+<AREA SHAPE='RECT' COORDS='416,525,504,573' HREF='#0000776' ALT=''>
+<AREA SHAPE='RECT' COORDS='383,630,484,693' HREF='#0000777' ALT=''>
+<AREA SHAPE='RECT' COORDS='1251,1096,1373,1176' HREF='#0000307' ALT=''>
+<AREA SHAPE='RECT' COORDS='764,413,860,461' HREF='#0044430' ALT=''>
+<AREA SHAPE='RECT' COORDS='320,525,392,573' HREF='#0005819' ALT=''>
+<AREA SHAPE='RECT' COORDS='883,518,979,581' HREF='#0099513' ALT=''>
+<AREA SHAPE='RECT' COORDS='648,518,741,581' HREF='#0005875' ALT=''>
+<AREA SHAPE='RECT' COORDS='765,518,859,581' HREF='#0005815' ALT=''>
+<AREA SHAPE='RECT' COORDS='647,637,761,685' HREF='#0005871' ALT=''>
+<AREA SHAPE='RECT' COORDS='221,525,296,573' HREF='#1902494' ALT=''>
+<AREA SHAPE='RECT' COORDS='249,637,340,685' HREF='#1990234' ALT=''>
+<AREA SHAPE='RECT' COORDS='1027,197,1117,245' HREF='#0044424' ALT=''>
+<AREA SHAPE='RECT' COORDS='1005,294,1096,357' HREF='#0044446' ALT=''>
+<AREA SHAPE='RECT' COORDS='1464,301,1560,349' HREF='#0044444' ALT=''>
+<AREA SHAPE='RECT' COORDS='317,301,408,349' HREF='#0043229' ALT=''>
+<AREA SHAPE='RECT' COORDS='787,301,901,349' HREF='#0099512' ALT=''>
+<AREA SHAPE='RECT' COORDS='999,413,1103,461' HREF='#0044427' ALT=''>
+<AREA SHAPE='RECT' COORDS='1139,985,1256,1047' HREF='#1902554' ALT=''>
+<AREA SHAPE='RECT' COORDS='707,197,821,245' HREF='#0099081' ALT=''>
+<AREA SHAPE='RECT' COORDS='1476,413,1548,461' HREF='#0005829' ALT=''>
+<AREA SHAPE='RECT' COORDS='721,742,876,839' HREF='#0061695' ALT=''>
+<AREA SHAPE='RECT' COORDS='879,888,985,936' HREF='#1902911' ALT=''>
+<AREA SHAPE='RECT' COORDS='785,637,876,685' HREF='#0005813' ALT=''>
+<AREA SHAPE='RECT' COORDS='1144,413,1235,461' HREF='#0044428' ALT=''>
+<AREA SHAPE='RECT' COORDS='101,525,197,573' HREF='#0005694' ALT=''>
+<AREA SHAPE='RECT' COORDS='101,637,197,685' HREF='#0000793' ALT=''>
+<AREA SHAPE='RECT' COORDS='401,197,476,245' HREF='#0043226' ALT=''>
+<AREA SHAPE='RECT' COORDS='432,301,597,349' HREF='#0043228' ALT=''>
+<AREA SHAPE='RECT' COORDS='152,301,291,349' HREF='#0043227' ALT=''>
+<AREA SHAPE='RECT' COORDS='309,406,475,469' HREF='#0043232' ALT=''>
+<AREA SHAPE='RECT' COORDS='512,413,640,461' HREF='#0032991' ALT=''>
+<AREA SHAPE='RECT' COORDS='747,5,629,29' HREF='#0005575' ALT=''>
+<AREA SHAPE='RECT' COORDS='689,101,804,149' HREF='#0099080' ALT=''>
+<AREA SHAPE='RECT' COORDS='828,101,905,149' HREF='#0044422' ALT=''>
+<AREA SHAPE='RECT' COORDS='929,101,1001,149' HREF='#0044464' ALT=''>
+</MAP>
+<p align="center"><img border="0" src="GOCOMPONENT.png" usemap='#goPathImage' ALT=''></p>
+<p>&nbsp;</p>
+<table border='1' width='100%' id='table1'>
+	<tr>
+		<td Align=center ><b>GO term</b></td>
+		<td Align=center><b>Description</b></td>
+		<td width=120 Align=center><b><a href='#p_value_info'>P-value</a></b></td> 
+		<td width=120 Align=center><b><a href='#fdr_info'>FDR q-value</a></b></td> 
+		<td width=230 Align=center><b><a href='#enrich_info'> Enrichment (N, B, n, b) </a></b> </td>
+		<td Align=center><b><a href='#genes_info'> Genes </a></b></td>
+	</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0044430&amp;view=details' target="_blank">GO:0044430</a><a name=0044430></a></td>
+<td>cytoskeletal part</td>
+<td  align=center>8.78E-8</td>
+<td  align=center>8.22E-5</td>
+<td  align=center>1.35 (1285,154,781,126)</td>
+<td>
+<a id="ctrl_elements_GO:0044430" href="javascript:toggle('elements_GO:0044430')">[+] Show genes</a><br>
+<div id="elements_GO:0044430" style="display:none"> <font size=1>
+APEX1  -  apex nuclease (multifunctional dna repair enzyme) 1<br>
+CDC6  -  cell division cycle 6<br>
+CEP85  -  centrosomal protein 85kda<br>
+SPTA1  -  spectrin, alpha, erythrocytic 1 (elliptocytosis 2)<br>
+CDC20  -  cell division cycle 20<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+TCP1  -  t-complex 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+GSN  -  gelsolin<br>
+BRCA1  -  breast cancer 1, early onset<br>
+CEP55  -  centrosomal protein 55kda<br>
+ANLN  -  anillin, actin binding protein<br>
+GSG2  -  germ cell associated 2 (haspin)<br>
+FAM92A1  -  family with sequence similarity 92, member a1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+SPAG5  -  sperm associated antigen 5<br>
+SSX2IP  -  synovial sarcoma, x breakpoint 2 interacting protein<br>
+CCDC14  -  coiled-coil domain containing 14<br>
+CLIC4  -  chloride intracellular channel 4<br>
+PSMA1  -  proteasome (prosome, macropain) subunit, alpha type, 1<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+TUBG1  -  tubulin, gamma 1<br>
+CNTLN  -  centlein, centrosomal protein<br>
+TTK  -  ttk protein kinase<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+CENPJ  -  centromere protein j<br>
+MLF1IP  -  mlf1 interacting protein<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+TPM4  -  tropomyosin 4<br>
+DLGAP5  -  discs, large (drosophila) homolog-associated protein 5<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+AURKB  -  aurora kinase b<br>
+KIF18A  -  kinesin family member 18a<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF15  -  kinesin family member 15<br>
+FSCN1  -  fascin homolog 1, actin-bundling protein (strongylocentrotus purpuratus)<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+KIAA0101  -  kiaa0101<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+AHI1  -  abelson helper integration site 1<br>
+GPSM2  -  g-protein signaling modulator 2<br>
+CDC45  -  cell division cycle 45<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+LRP8  -  low density lipoprotein receptor-related protein 8, apolipoprotein e receptor<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+NPM1  -  nucleophosmin (nucleolar phosphoprotein b23, numatrin)<br>
+STMN1  -  stathmin 1<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+TBCA  -  tubulin folding cofactor a<br>
+KIF20A  -  kinesin family member 20a<br>
+GNAI1  -  guanine nucleotide binding protein (g protein), alpha inhibiting activity polypeptide 1<br>
+KIF23  -  kinesin family member 23<br>
+AUNIP  -  aurora kinase a and ninein interacting protein<br>
+CDCA8  -  cell division cycle associated 8<br>
+ECT2  -  epithelial cell transforming sequence 2 oncogene<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+RUVBL2  -  ruvb-like 2 (e. coli)<br>
+CCNB2  -  cyclin b2<br>
+CCNE2  -  cyclin e2<br>
+AIF1L  -  allograft inflammatory factor 1-like<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+SEPT11  -  septin 11<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+MNS1  -  meiosis-specific nuclear structural 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CEP128  -  centrosomal protein 128kda<br>
+WRN  -  werner syndrome, recq helicase-like<br>
+ESPL1  -  extra spindle pole bodies homolog 1 (s. cerevisiae)<br>
+LATS2  -  large tumor suppressor kinase 2<br>
+CHEK1  -  checkpoint kinase 1<br>
+RAD51  -  rad51 recombinase<br>
+KIF11  -  kinesin family member 11<br>
+MCM3  -  minichromosome maintenance complex component 3<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+KIF4B  -  kinesin family member 4b<br>
+KIF4A  -  kinesin family member 4a<br>
+IFT122  -  intraflagellar transport 122 homolog (chlamydomonas)<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+KNTC1  -  kinetochore associated 1<br>
+GEN1  -  gen1 holliday junction 5' flap endonuclease<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+PKD2  -  polycystic kidney disease 2 (autosomal dominant)<br>
+KIF14  -  kinesin family member 14<br>
+MAP7  -  microtubule-associated protein 7<br>
+ZNF804A  -  zinc finger protein 804a<br>
+RAN  -  ran, member ras oncogene family<br>
+NEK2  -  nima-related kinase 2<br>
+RANBP1  -  ran binding protein 1<br>
+SNX4  -  sorting nexin 4<br>
+TUBB  -  tubulin, beta class i<br>
+CCNE1  -  cyclin e1<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+DYRK3  -  dual-specificity tyrosine-(y)-phosphorylation regulated kinase 3<br>
+ASPM  -  asp (abnormal spindle) homolog, microcephaly associated (drosophila)<br>
+STIL  -  scl/tal1 interrupting locus<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CKAP2L  -  cytoskeleton associated protein 2-like<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+PLK4  -  polo-like kinase 4<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+ALS2  -  amyotrophic lateral sclerosis 2 (juvenile)<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+CCNB1  -  cyclin b1<br>
+XRCC2  -  x-ray repair complementing defective repair in chinese hamster cells 2<br>
+PRKAR2B  -  protein kinase, camp-dependent, regulatory, type ii, beta<br>
+HMMR  -  hyaluronan-mediated motility receptor (rhamm)<br>
+KIF2C  -  kinesin family member 2c<br>
+SHCBP1  -  shc sh2-domain binding protein 1<br>
+YWHAE  -  tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, epsilon polypeptide<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005874&amp;view=details' target="_blank">GO:0005874</a><a name=0005874></a></td>
+<td>microtubule</td>
+<td  align=center>1.95E-6</td>
+<td  align=center>9.14E-4</td>
+<td  align=center>1.46 (1285,52,844,50)</td>
+<td>
+<a id="ctrl_elements_GO:0005874" href="javascript:toggle('elements_GO:0005874')">[+] Show genes</a><br>
+<div id="elements_GO:0005874" style="display:none"> <font size=1>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+TCP1  -  t-complex 1<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CLIP2  -  cap-gly domain containing linker protein 2<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+TUBG1  -  tubulin, gamma 1<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+KIF4B  -  kinesin family member 4b<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+CENPJ  -  centromere protein j<br>
+KIF4A  -  kinesin family member 4a<br>
+KNTC1  -  kinetochore associated 1<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+KIF14  -  kinesin family member 14<br>
+ZNF804A  -  zinc finger protein 804a<br>
+MAP7  -  microtubule-associated protein 7<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+TUBB  -  tubulin, beta class i<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+STMN1  -  stathmin 1<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+TBCA  -  tubulin folding cofactor a<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+KIF20A  -  kinesin family member 20a<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+KIF23  -  kinesin family member 23<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0000307&amp;view=details' target="_blank">GO:0000307</a><a name=0000307></a></td>
+<td>cyclin-dependent protein kinase holoenzyme complex</td>
+<td  align=center>2.26E-6</td>
+<td  align=center>7.06E-4</td>
+<td  align=center>3.16 (1285,13,407,13)</td>
+<td>
+<a id="ctrl_elements_GO:0000307" href="javascript:toggle('elements_GO:0000307')">[+] Show genes</a><br>
+<div id="elements_GO:0000307" style="display:none"> <font size=1>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+CCNB2  -  cyclin b2<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+CCNE2  -  cyclin e2<br>
+CCNE1  -  cyclin e1<br>
+CCNA1  -  cyclin a1<br>
+CCNA2  -  cyclin a2<br>
+CCNB1  -  cyclin b1<br>
+CKS2  -  cdc28 protein kinase regulatory subunit 2<br>
+CKS1B  -  cdc28 protein kinase regulatory subunit 1b<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005815&amp;view=details' target="_blank">GO:0005815</a><a name=0005815></a></td>
+<td>microtubule organizing center</td>
+<td  align=center>3.69E-6</td>
+<td  align=center>8.64E-4</td>
+<td  align=center>1.42 (1285,82,781,71)</td>
+<td>
+<a id="ctrl_elements_GO:0005815" href="javascript:toggle('elements_GO:0005815')">[+] Show genes</a><br>
+<div id="elements_GO:0005815" style="display:none"> <font size=1>
+APEX1  -  apex nuclease (multifunctional dna repair enzyme) 1<br>
+CEP85  -  centrosomal protein 85kda<br>
+CDC20  -  cell division cycle 20<br>
+CCNB2  -  cyclin b2<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+CCNE2  -  cyclin e2<br>
+TCP1  -  t-complex 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+CEP55  -  centrosomal protein 55kda<br>
+GSG2  -  germ cell associated 2 (haspin)<br>
+FAM92A1  -  family with sequence similarity 92, member a1<br>
+SSX2IP  -  synovial sarcoma, x breakpoint 2 interacting protein<br>
+CLIC4  -  chloride intracellular channel 4<br>
+CCDC14  -  coiled-coil domain containing 14<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+WRN  -  werner syndrome, recq helicase-like<br>
+PSMA1  -  proteasome (prosome, macropain) subunit, alpha type, 1<br>
+ESPL1  -  extra spindle pole bodies homolog 1 (s. cerevisiae)<br>
+LATS2  -  large tumor suppressor kinase 2<br>
+CHEK1  -  checkpoint kinase 1<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+TUBG1  -  tubulin, gamma 1<br>
+CNTLN  -  centlein, centrosomal protein<br>
+RAD51  -  rad51 recombinase<br>
+KIFC1  -  kinesin family member c1<br>
+MCM3  -  minichromosome maintenance complex component 3<br>
+CENPJ  -  centromere protein j<br>
+MLF1IP  -  mlf1 interacting protein<br>
+IFT122  -  intraflagellar transport 122 homolog (chlamydomonas)<br>
+GEN1  -  gen1 holliday junction 5' flap endonuclease<br>
+AURKA  -  aurora kinase a<br>
+PKD2  -  polycystic kidney disease 2 (autosomal dominant)<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+DLGAP5  -  discs, large (drosophila) homolog-associated protein 5<br>
+RANBP1  -  ran binding protein 1<br>
+NEK2  -  nima-related kinase 2<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+CCNE1  -  cyclin e1<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+KIAA0101  -  kiaa0101<br>
+AHI1  -  abelson helper integration site 1<br>
+GPSM2  -  g-protein signaling modulator 2<br>
+CDC45  -  cell division cycle 45<br>
+ASPM  -  asp (abnormal spindle) homolog, microcephaly associated (drosophila)<br>
+STIL  -  scl/tal1 interrupting locus<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CKAP2L  -  cytoskeleton associated protein 2-like<br>
+NPM1  -  nucleophosmin (nucleolar phosphoprotein b23, numatrin)<br>
+PLK4  -  polo-like kinase 4<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+ALS2  -  amyotrophic lateral sclerosis 2 (juvenile)<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+GNAI1  -  guanine nucleotide binding protein (g protein), alpha inhibiting activity polypeptide 1<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+CCNB1  -  cyclin b1<br>
+KIF23  -  kinesin family member 23<br>
+XRCC2  -  x-ray repair complementing defective repair in chinese hamster cells 2<br>
+AUNIP  -  aurora kinase a and ninein interacting protein<br>
+HMMR  -  hyaluronan-mediated motility receptor (rhamm)<br>
+PRKAR2B  -  protein kinase, camp-dependent, regulatory, type ii, beta<br>
+KIF2C  -  kinesin family member 2c<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+RUVBL2  -  ruvb-like 2 (e. coli)<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:1902554&amp;view=details' target="_blank">GO:1902554</a><a name=1902554></a></td>
+<td>serine/threonine protein kinase complex</td>
+<td  align=center>8.68E-6</td>
+<td  align=center>1.63E-3</td>
+<td  align=center>2.95 (1285,15,407,14)</td>
+<td>
+<a id="ctrl_elements_GO:1902554" href="javascript:toggle('elements_GO:1902554')">[+] Show genes</a><br>
+<div id="elements_GO:1902554" style="display:none"> <font size=1>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+CCNB2  -  cyclin b2<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+CCNE2  -  cyclin e2<br>
+CCNE1  -  cyclin e1<br>
+WDR41  -  wd repeat domain 41<br>
+CCNA1  -  cyclin a1<br>
+CCNA2  -  cyclin a2<br>
+CCNB1  -  cyclin b1<br>
+CKS2  -  cdc28 protein kinase regulatory subunit 2<br>
+CKS1B  -  cdc28 protein kinase regulatory subunit 1b<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005871&amp;view=details' target="_blank">GO:0005871</a><a name=0005871></a></td>
+<td>kinesin complex</td>
+<td  align=center>1.04E-5</td>
+<td  align=center>1.63E-3</td>
+<td  align=center>3.05 (1285,12,421,12)</td>
+<td>
+<a id="ctrl_elements_GO:0005871" href="javascript:toggle('elements_GO:0005871')">[+] Show genes</a><br>
+<div id="elements_GO:0005871" style="display:none"> <font size=1>
+KIF11  -  kinesin family member 11<br>
+KIF14  -  kinesin family member 14<br>
+KIFC1  -  kinesin family member c1<br>
+KIF4B  -  kinesin family member 4b<br>
+KIF23  -  kinesin family member 23<br>
+CENPE  -  centromere protein e, 312kda<br>
+KIF4A  -  kinesin family member 4a<br>
+KIF18A  -  kinesin family member 18a<br>
+KIF2C  -  kinesin family member 2c<br>
+KIF15  -  kinesin family member 15<br>
+KIF20A  -  kinesin family member 20a<br>
+YWHAE  -  tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, epsilon polypeptide<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005813&amp;view=details' target="_blank">GO:0005813</a><a name=0005813></a></td>
+<td>centrosome</td>
+<td  align=center>1.18E-5</td>
+<td  align=center>1.58E-3</td>
+<td  align=center>1.45 (1285,67,781,59)</td>
+<td>
+<a id="ctrl_elements_GO:0005813" href="javascript:toggle('elements_GO:0005813')">[+] Show genes</a><br>
+<div id="elements_GO:0005813" style="display:none"> <font size=1>
+APEX1  -  apex nuclease (multifunctional dna repair enzyme) 1<br>
+CEP85  -  centrosomal protein 85kda<br>
+CDC20  -  cell division cycle 20<br>
+CCNB2  -  cyclin b2<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+CCNE2  -  cyclin e2<br>
+TCP1  -  t-complex 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+CEP55  -  centrosomal protein 55kda<br>
+GSG2  -  germ cell associated 2 (haspin)<br>
+CLIC4  -  chloride intracellular channel 4<br>
+CCDC14  -  coiled-coil domain containing 14<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+PSMA1  -  proteasome (prosome, macropain) subunit, alpha type, 1<br>
+WRN  -  werner syndrome, recq helicase-like<br>
+ESPL1  -  extra spindle pole bodies homolog 1 (s. cerevisiae)<br>
+CHEK1  -  checkpoint kinase 1<br>
+PLK1  -  polo-like kinase 1<br>
+TUBG1  -  tubulin, gamma 1<br>
+CNTLN  -  centlein, centrosomal protein<br>
+MCM3  -  minichromosome maintenance complex component 3<br>
+CENPJ  -  centromere protein j<br>
+GEN1  -  gen1 holliday junction 5' flap endonuclease<br>
+AURKA  -  aurora kinase a<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+DLGAP5  -  discs, large (drosophila) homolog-associated protein 5<br>
+RANBP1  -  ran binding protein 1<br>
+NEK2  -  nima-related kinase 2<br>
+AURKB  -  aurora kinase b<br>
+CCNE1  -  cyclin e1<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+KIAA0101  -  kiaa0101<br>
+AHI1  -  abelson helper integration site 1<br>
+GPSM2  -  g-protein signaling modulator 2<br>
+ASPM  -  asp (abnormal spindle) homolog, microcephaly associated (drosophila)<br>
+STIL  -  scl/tal1 interrupting locus<br>
+CDC45  -  cell division cycle 45<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CKAP2L  -  cytoskeleton associated protein 2-like<br>
+NPM1  -  nucleophosmin (nucleolar phosphoprotein b23, numatrin)<br>
+PLK4  -  polo-like kinase 4<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+ALS2  -  amyotrophic lateral sclerosis 2 (juvenile)<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+GNAI1  -  guanine nucleotide binding protein (g protein), alpha inhibiting activity polypeptide 1<br>
+CCNB1  -  cyclin b1<br>
+XRCC2  -  x-ray repair complementing defective repair in chinese hamster cells 2<br>
+KIF23  -  kinesin family member 23<br>
+AUNIP  -  aurora kinase a and ninein interacting protein<br>
+PRKAR2B  -  protein kinase, camp-dependent, regulatory, type ii, beta<br>
+HMMR  -  hyaluronan-mediated motility receptor (rhamm)<br>
+KIF2C  -  kinesin family member 2c<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+RUVBL2  -  ruvb-like 2 (e. coli)<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005819&amp;view=details' target="_blank">GO:0005819</a><a name=0005819></a></td>
+<td>spindle</td>
+<td  align=center>2.26E-5</td>
+<td  align=center>2.64E-3</td>
+<td  align=center>1.56 (1285,30,825,30)</td>
+<td>
+<a id="ctrl_elements_GO:0005819" href="javascript:toggle('elements_GO:0005819')">[+] Show genes</a><br>
+<div id="elements_GO:0005819" style="display:none"> <font size=1>
+PRC1  -  protein regulator of cytokinesis 1<br>
+PKD2  -  polycystic kidney disease 2 (autosomal dominant)<br>
+CDC20  -  cell division cycle 20<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+AURKB  -  aurora kinase b<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF15  -  kinesin family member 15<br>
+GSG2  -  germ cell associated 2 (haspin)<br>
+SPAG5  -  sperm associated antigen 5<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+ASPM  -  asp (abnormal spindle) homolog, microcephaly associated (drosophila)<br>
+ESPL1  -  extra spindle pole bodies homolog 1 (s. cerevisiae)<br>
+CDC7  -  cell division cycle 7<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+CKAP2L  -  cytoskeleton associated protein 2-like<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+TUBG1  -  tubulin, gamma 1<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+TTK  -  ttk protein kinase<br>
+KIF20A  -  kinesin family member 20a<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+KIF23  -  kinesin family member 23<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+SHCBP1  -  shc sh2-domain binding protein 1<br>
+ECT2  -  epithelial cell transforming sequence 2 oncogene<br>
+AURKA  -  aurora kinase a<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005634&amp;view=details' target="_blank">GO:0005634</a><a name=0005634></a></td>
+<td>nucleus</td>
+<td  align=center>3.15E-5</td>
+<td  align=center>3.27E-3</td>
+<td  align=center>1.54 (1285,462,130,72)</td>
+<td>
+<a id="ctrl_elements_GO:0005634" href="javascript:toggle('elements_GO:0005634')">[+] Show genes</a><br>
+<div id="elements_GO:0005634" style="display:none"> <font size=1>
+CDC25A  -  cell division cycle 25a<br>
+CCNB2  -  cyclin b2<br>
+CCNE2  -  cyclin e2<br>
+BTBD3  -  btb (poz) domain containing 3<br>
+FLT3  -  fms-related tyrosine kinase 3<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+HIST2H3D  -  histone cluster 2, h3d<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+UHRF1  -  ubiquitin-like with phd and ring finger domains 1<br>
+DIAPH3  -  diaphanous-related formin 3<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+CDCA7  -  cell division cycle associated 7<br>
+NCAPH  -  non-smc condensin i complex, subunit h<br>
+LOC81691  -  exonuclease nef-sp<br>
+MKI67  -  antigen identified by monoclonal antibody ki-67<br>
+CIT  -  citron (rho-interacting, serine/threonine kinase 21)<br>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+BRIP1  -  brca1 interacting protein c-terminal helicase 1<br>
+IGF2BP2  -  insulin-like growth factor 2 mrna binding protein 2<br>
+SPC25  -  spc25, ndc80 kinetochore complex component<br>
+TPX2  -  tpx2, microtubule-associated<br>
+HIST2H2AA4  -  histone cluster 2, h2aa4<br>
+NFIX  -  nuclear factor i/x (ccaat-binding transcription factor)<br>
+H2AFY  -  h2a histone family, member y<br>
+TTK  -  ttk protein kinase<br>
+RAD51  -  rad51 recombinase<br>
+MCM4  -  minichromosome maintenance complex component 4<br>
+KIF11  -  kinesin family member 11<br>
+PRR11  -  proline rich 11<br>
+CENPJ  -  centromere protein j<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+HIST1H4J  -  histone cluster 1, h4j<br>
+EZH2  -  enhancer of zeste homolog 2 (drosophila)<br>
+MLF1IP  -  mlf1 interacting protein<br>
+RAD51AP1  -  rad51 associated protein 1<br>
+SMC4  -  structural maintenance of chromosomes 4<br>
+HJURP  -  holliday junction recognition protein<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+KIF14  -  kinesin family member 14<br>
+DLGAP5  -  discs, large (drosophila) homolog-associated protein 5<br>
+HOXB3  -  homeobox b3<br>
+TUBB  -  tubulin, beta class i<br>
+HIST1H1B  -  histone cluster 1, h1b<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+KIAA0101  -  kiaa0101<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+CLU  -  clusterin<br>
+CDC45  -  cell division cycle 45<br>
+ASPM  -  asp (abnormal spindle) homolog, microcephaly associated (drosophila)<br>
+TYMS  -  thymidylate synthetase<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+LUZP1  -  leucine zipper protein 1<br>
+HNRNPAB  -  heterogeneous nuclear ribonucleoprotein a/b<br>
+GINS1  -  gins complex subunit 1 (psf1 homolog)<br>
+DNMT3B  -  dna (cytosine-5-)-methyltransferase 3 beta<br>
+NREP  -  neuronal regeneration related protein<br>
+MAFG  -  v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog g<br>
+POLQ  -  polymerase (dna directed), theta<br>
+HSP90AA1  -  heat shock protein 90kda alpha (cytosolic), class a member 1<br>
+CCNA2  -  cyclin a2<br>
+KIF23  -  kinesin family member 23<br>
+SCCPDH  -  saccharopine dehydrogenase (putative)<br>
+NET1  -  neuroepithelial cell transforming 1<br>
+ATAD2  -  atpase family, aaa domain containing 2<br>
+MPO  -  myeloperoxidase<br>
+EXO1  -  exonuclease 1<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:1902911&amp;view=details' target="_blank">GO:1902911</a><a name=1902911></a></td>
+<td>protein kinase complex</td>
+<td  align=center>5.17E-5</td>
+<td  align=center>4.84E-3</td>
+<td  align=center>2.76 (1285,16,407,14)</td>
+<td>
+<a id="ctrl_elements_GO:1902911" href="javascript:toggle('elements_GO:1902911')">[+] Show genes</a><br>
+<div id="elements_GO:1902911" style="display:none"> <font size=1>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+CCNB2  -  cyclin b2<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+CCNE2  -  cyclin e2<br>
+CCNE1  -  cyclin e1<br>
+WDR41  -  wd repeat domain 41<br>
+CCNA1  -  cyclin a1<br>
+CCNA2  -  cyclin a2<br>
+CCNB1  -  cyclin b1<br>
+CKS2  -  cdc28 protein kinase regulatory subunit 2<br>
+CKS1B  -  cdc28 protein kinase regulatory subunit 1b<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0099513&amp;view=details' target="_blank">GO:0099513</a><a name=0099513></a></td>
+<td>polymeric cytoskeletal fiber</td>
+<td  align=center>7.92E-5</td>
+<td  align=center>6.74E-3</td>
+<td  align=center>1.37 (1285,64,850,58)</td>
+<td>
+<a id="ctrl_elements_GO:0099513" href="javascript:toggle('elements_GO:0099513')">[+] Show genes</a><br>
+<div id="elements_GO:0099513" style="display:none"> <font size=1>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+AIF1L  -  allograft inflammatory factor 1-like<br>
+TCP1  -  t-complex 1<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+MNS1  -  meiosis-specific nuclear structural 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CLIP2  -  cap-gly domain containing linker protein 2<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+TUBG1  -  tubulin, gamma 1<br>
+SLC1A4  -  solute carrier family 1 (glutamate/neutral amino acid transporter), member 4<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+KIF4B  -  kinesin family member 4b<br>
+CENPJ  -  centromere protein j<br>
+KIF4A  -  kinesin family member 4a<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+KNTC1  -  kinetochore associated 1<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+KIF14  -  kinesin family member 14<br>
+TPM4  -  tropomyosin 4<br>
+MAP7  -  microtubule-associated protein 7<br>
+ZNF804A  -  zinc finger protein 804a<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+TUBB  -  tubulin, beta class i<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+STMN1  -  stathmin 1<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+TBCA  -  tubulin folding cofactor a<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+KIF20A  -  kinesin family member 20a<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+KIF23  -  kinesin family member 23<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0000776&amp;view=details' target="_blank">GO:0000776</a><a name=0000776></a></td>
+<td>kinetochore</td>
+<td  align=center>1.01E-4</td>
+<td  align=center>7.86E-3</td>
+<td  align=center>1.45 (1285,37,861,36)</td>
+<td>
+<a id="ctrl_elements_GO:0000776" href="javascript:toggle('elements_GO:0000776')">[+] Show genes</a><br>
+<div id="elements_GO:0000776" style="display:none"> <font size=1>
+CKAP5  -  cytoskeleton associated protein 5<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+ZWILCH  -  zwilch kinetochore protein<br>
+SEH1L  -  seh1-like (s. cerevisiae)<br>
+SGOL1  -  shugoshin-like 1 (s. pombe)<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+AURKB  -  aurora kinase b<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF18A  -  kinesin family member 18a<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+NUP107  -  nucleoporin 107kda<br>
+SPAG5  -  sperm associated antigen 5<br>
+CENPI  -  centromere protein i<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+ZWINT  -  zw10 interacting kinetochore protein<br>
+CENPO  -  centromere protein o<br>
+SPC24  -  spc24, ndc80 kinetochore complex component<br>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+PLK1  -  polo-like kinase 1<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+SPC25  -  spc25, ndc80 kinetochore complex component<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+NUP43  -  nucleoporin 43kda<br>
+SUGT1  -  sgt1, suppressor of g2 allele of skp1 (s. cerevisiae)<br>
+TTK  -  ttk protein kinase<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+SGOL2  -  shugoshin-like 2 (s. pombe)<br>
+CASC5  -  cancer susceptibility candidate 5<br>
+CENPN  -  centromere protein n<br>
+MLF1IP  -  mlf1 interacting protein<br>
+KNTC1  -  kinetochore associated 1<br>
+KIF2C  -  kinesin family member 2c<br>
+CENPW  -  centromere protein w<br>
+HJURP  -  holliday junction recognition protein<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0044427&amp;view=details' target="_blank">GO:0044427</a><a name=0044427></a></td>
+<td>chromosomal part</td>
+<td  align=center>1.12E-4</td>
+<td  align=center>8.04E-3</td>
+<td  align=center>1.56 (1285,177,336,72)</td>
+<td>
+<a id="ctrl_elements_GO:0044427" href="javascript:toggle('elements_GO:0044427')">[+] Show genes</a><br>
+<div id="elements_GO:0044427" style="display:none"> <font size=1>
+CDK1  -  cyclin-dependent kinase 1<br>
+RFC3  -  replication factor c (activator 1) 3, 38kda<br>
+TCP1  -  t-complex 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+HIST2H3D  -  histone cluster 2, h3d<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+HMGB3  -  high mobility group box 3<br>
+UHRF1  -  ubiquitin-like with phd and ring finger domains 1<br>
+HIST1H3H  -  histone cluster 1, h3h<br>
+SPAG5  -  sperm associated antigen 5<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+CHAF1B  -  chromatin assembly factor 1, subunit b (p60)<br>
+NCAPH  -  non-smc condensin i complex, subunit h<br>
+SMC2  -  structural maintenance of chromosomes 2<br>
+CENPI  -  centromere protein i<br>
+ZWINT  -  zw10 interacting kinetochore protein<br>
+NCAPG2  -  non-smc condensin ii complex, subunit g2<br>
+SPC24  -  spc24, ndc80 kinetochore complex component<br>
+CDCA5  -  cell division cycle associated 5<br>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+PLK1  -  polo-like kinase 1<br>
+SPC25  -  spc25, ndc80 kinetochore complex component<br>
+RCC1  -  regulator of chromosome condensation 1<br>
+WHSC1  -  wolf-hirschhorn syndrome candidate 1<br>
+HIST2H2AA4  -  histone cluster 2, h2aa4<br>
+PARPBP  -  parp1 binding protein<br>
+H2AFY  -  h2a histone family, member y<br>
+TTK  -  ttk protein kinase<br>
+CHAF1A  -  chromatin assembly factor 1, subunit a (p150)<br>
+CASC5  -  cancer susceptibility candidate 5<br>
+RAD51  -  rad51 recombinase<br>
+MCM4  -  minichromosome maintenance complex component 4<br>
+MCM6  -  minichromosome maintenance complex component 6<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+EZH2  -  enhancer of zeste homolog 2 (drosophila)<br>
+HIST1H4J  -  histone cluster 1, h4j<br>
+MLF1IP  -  mlf1 interacting protein<br>
+KNTC1  -  kinetochore associated 1<br>
+RAD51AP1  -  rad51 associated protein 1<br>
+SMC4  -  structural maintenance of chromosomes 4<br>
+HIST2H2AB  -  histone cluster 2, h2ab<br>
+HJURP  -  holliday junction recognition protein<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+HIST1H1B  -  histone cluster 1, h1b<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+KIF18A  -  kinesin family member 18a<br>
+ESCO2  -  establishment of sister chromatid cohesion n-acetyltransferase 2<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+WDHD1  -  wd repeat and hmg-box dna binding protein 1<br>
+ATAD5  -  atpase family, aaa domain containing 5<br>
+MYCN  -  v-myc avian myelocytomatosis viral oncogene neuroblastoma derived homolog<br>
+CENPO  -  centromere protein o<br>
+CDC45  -  cell division cycle 45<br>
+GINS2  -  gins complex subunit 2 (psf2 homolog)<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+RBBP8  -  retinoblastoma binding protein 8<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+GINS1  -  gins complex subunit 1 (psf1 homolog)<br>
+HIST1H2AH  -  histone cluster 1, h2ah<br>
+HELLS  -  helicase, lymphoid-specific<br>
+POLE2  -  polymerase (dna directed), epsilon 2, accessory subunit<br>
+POLE  -  polymerase (dna directed), epsilon, catalytic subunit<br>
+CCNB1  -  cyclin b1<br>
+XRCC2  -  x-ray repair complementing defective repair in chinese hamster cells 2<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0000777&amp;view=details' target="_blank">GO:0000777</a><a name=0000777></a></td>
+<td>condensed chromosome kinetochore</td>
+<td  align=center>1.7E-4</td>
+<td  align=center>1.14E-2</td>
+<td  align=center>2.14 (1285,27,468,21)</td>
+<td>
+<a id="ctrl_elements_GO:0000777" href="javascript:toggle('elements_GO:0000777')">[+] Show genes</a><br>
+<div id="elements_GO:0000777" style="display:none"> <font size=1>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+NEK2  -  nima-related kinase 2<br>
+SPC25  -  spc25, ndc80 kinetochore complex component<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+CENPE  -  centromere protein e, 312kda<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+SGOL2  -  shugoshin-like 2 (s. pombe)<br>
+CASC5  -  cancer susceptibility candidate 5<br>
+SPAG5  -  sperm associated antigen 5<br>
+ZWINT  -  zw10 interacting kinetochore protein<br>
+MLF1IP  -  mlf1 interacting protein<br>
+KNTC1  -  kinetochore associated 1<br>
+KIF2C  -  kinesin family member 2c<br>
+CENPO  -  centromere protein o<br>
+CENPW  -  centromere protein w<br>
+HJURP  -  holliday junction recognition protein<br>
+SPC24  -  spc24, ndc80 kinetochore complex component<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005654&amp;view=details' target="_blank">GO:0005654</a><a name=0005654></a></td>
+<td>nucleoplasm</td>
+<td  align=center>2.1E-4</td>
+<td  align=center>1.31E-2</td>
+<td  align=center>1.14 (1285,313,897,249)</td>
+<td>
+<a id="ctrl_elements_GO:0005654" href="javascript:toggle('elements_GO:0005654')">[+] Show genes</a><br>
+<div id="elements_GO:0005654" style="display:none"> <font size=1>
+GFI1  -  growth factor independent 1 transcription repressor<br>
+RFC3  -  replication factor c (activator 1) 3, 38kda<br>
+TADA1  -  transcriptional adaptor 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+BRCA1  -  breast cancer 1, early onset<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+LIG3  -  ligase iii, dna, atp-dependent<br>
+CHAF1B  -  chromatin assembly factor 1, subunit b (p60)<br>
+NCAPG2  -  non-smc condensin ii complex, subunit g2<br>
+LTV1  -  ltv1 homolog (s. cerevisiae)<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+VWA9  -  von willebrand factor a domain containing 9<br>
+SOX4  -  sry (sex determining region y)-box 4<br>
+BLM  -  bloom syndrome, recq helicase-like<br>
+CHD1L  -  chromodomain helicase dna binding protein 1-like<br>
+CNTLN  -  centlein, centrosomal protein<br>
+TCERG1  -  transcription elongation regulator 1<br>
+SCMH1  -  sex comb on midleg homolog 1 (drosophila)<br>
+MCM8  -  minichromosome maintenance complex component 8<br>
+ORC6  -  origin recognition complex, subunit 6<br>
+LMO2  -  lim domain only 2 (rhombotin-like 1)<br>
+DSCC1  -  dna replication and sister chromatid cohesion 1<br>
+NUDCD1  -  nudc domain containing 1<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+PSMD14  -  proteasome (prosome, macropain) 26s subunit, non-atpase, 14<br>
+SNRPD1  -  small nuclear ribonucleoprotein d1 polypeptide 16kda<br>
+HILPDA  -  hypoxia inducible lipid droplet-associated<br>
+MYBL2  -  v-myb avian myeloblastosis viral oncogene homolog-like 2<br>
+CCNA1  -  cyclin a1<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+MYB  -  v-myb avian myeloblastosis viral oncogene homolog<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+KDM1A  -  lysine (k)-specific demethylase 1a<br>
+CDC45  -  cell division cycle 45<br>
+HNRNPR  -  heterogeneous nuclear ribonucleoprotein r<br>
+CDC7  -  cell division cycle 7<br>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+HLTF  -  helicase-like transcription factor<br>
+BYSL  -  bystin-like<br>
+HSP90AB1  -  heat shock protein 90kda alpha (cytosolic), class b member 1<br>
+TIMELESS  -  timeless circadian clock<br>
+KIF20A  -  kinesin family member 20a<br>
+SPIN4  -  spindlin family, member 4<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+H2AFY2  -  h2a histone family, member y2<br>
+HSP90AA1  -  heat shock protein 90kda alpha (cytosolic), class a member 1<br>
+POLE2  -  polymerase (dna directed), epsilon 2, accessory subunit<br>
+POLE  -  polymerase (dna directed), epsilon, catalytic subunit<br>
+KIF23  -  kinesin family member 23<br>
+ARL4A  -  adp-ribosylation factor-like 4a<br>
+POLA1  -  polymerase (dna directed), alpha 1, catalytic subunit<br>
+RUVBL2  -  ruvb-like 2 (e. coli)<br>
+GSTCD  -  glutathione s-transferase, c-terminal domain containing<br>
+UROD  -  uroporphyrinogen decarboxylase<br>
+WDR12  -  wd repeat domain 12<br>
+HIST2H3D  -  histone cluster 2, h3d<br>
+HMGB2  -  high mobility group box 2<br>
+TIMM17A  -  translocase of inner mitochondrial membrane 17 homolog a (yeast)<br>
+CSTF3  -  cleavage stimulation factor, 3' pre-rna, subunit 3, 77kda<br>
+FANCA  -  fanconi anemia, complementation group a<br>
+PRIM1  -  primase, dna, polypeptide 1 (49kda)<br>
+CDCA4  -  cell division cycle associated 4<br>
+CASP6  -  caspase 6, apoptosis-related cysteine peptidase<br>
+CENPI  -  centromere protein i<br>
+PPIH  -  peptidylprolyl isomerase h (cyclophilin h)<br>
+ZWINT  -  zw10 interacting kinetochore protein<br>
+UNG  -  uracil-dna glycosylase<br>
+PARP2  -  poly (adp-ribose) polymerase 2<br>
+ETV5  -  ets variant 5<br>
+FAM124B  -  family with sequence similarity 124b<br>
+KPNA2  -  karyopherin alpha 2 (rag cohort 1, importin alpha 1)<br>
+PARPBP  -  parp1 binding protein<br>
+CASC5  -  cancer susceptibility candidate 5<br>
+DNAJB4  -  dnaj (hsp40) homolog, subfamily b, member 4<br>
+EZH2  -  enhancer of zeste homolog 2 (drosophila)<br>
+KIF4A  -  kinesin family member 4a<br>
+IFT122  -  intraflagellar transport 122 homolog (chlamydomonas)<br>
+SMC4  -  structural maintenance of chromosomes 4<br>
+WDR43  -  wd repeat domain 43<br>
+AURKA  -  aurora kinase a<br>
+CENPP  -  centromere protein p<br>
+RPS24  -  ribosomal protein s24<br>
+RBPMS  -  rna binding protein with multiple splicing<br>
+SUV39H2  -  suppressor of variegation 3-9 homolog 2 (drosophila)<br>
+CCNE1  -  cyclin e1<br>
+E2F8  -  e2f transcription factor 8<br>
+SSRP1  -  structure specific recognition protein 1<br>
+ETS2  -  v-ets avian erythroblastosis virus e26 oncogene homolog 2<br>
+CDK2AP1  -  cyclin-dependent kinase 2 associated protein 1<br>
+TXN  -  thioredoxin<br>
+HOXA7  -  homeobox a7<br>
+CSF1R  -  colony stimulating factor 1 receptor<br>
+ASUN  -  asunder spermatogenesis regulator<br>
+TSR1  -  tsr1, 20s rrna accumulation, homolog (s. cerevisiae)<br>
+MAPK6  -  mitogen-activated protein kinase 6<br>
+UBE2T  -  ubiquitin-conjugating enzyme e2t (putative)<br>
+GATA2  -  gata binding protein 2<br>
+HNRNPAB  -  heterogeneous nuclear ribonucleoprotein a/b<br>
+RUNX1  -  runt-related transcription factor 1<br>
+KLF4  -  kruppel-like factor 4 (gut)<br>
+CCNA2  -  cyclin a2<br>
+CCNB1  -  cyclin b1<br>
+GTF3C3  -  general transcription factor iiic, polypeptide 3, 102kda<br>
+ATAD2  -  atpase family, aaa domain containing 2<br>
+CDC6  -  cell division cycle 6<br>
+APEX1  -  apex nuclease (multifunctional dna repair enzyme) 1<br>
+CDC25A  -  cell division cycle 25a<br>
+CDC20  -  cell division cycle 20<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+DDX1  -  dead (asp-glu-ala-asp) box helicase 1<br>
+MITF  -  microphthalmia-associated transcription factor<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+SGOL1  -  shugoshin-like 1 (s. pombe)<br>
+GINS3  -  gins complex subunit 3 (psf3 homolog)<br>
+GADD45A  -  growth arrest and dna-damage-inducible, alpha<br>
+ANLN  -  anillin, actin binding protein<br>
+CDCA7  -  cell division cycle associated 7<br>
+DDB1  -  damage-specific dna binding protein 1, 127kda<br>
+SMC2  -  structural maintenance of chromosomes 2<br>
+GTF2H3  -  general transcription factor iih, polypeptide 3, 34kda<br>
+PCBD1  -  pterin-4 alpha-carbinolamine dehydratase/dimerization cofactor of hepatocyte nuclear factor 1 alpha<br>
+FOXM1  -  forkhead box m1<br>
+PSMA1  -  proteasome (prosome, macropain) subunit, alpha type, 1<br>
+PM20D2  -  peptidase m20 domain containing 2<br>
+ILF3  -  interleukin enhancer binding factor 3, 90kda<br>
+ANKRD28  -  ankyrin repeat domain 28<br>
+CDCA5  -  cell division cycle associated 5<br>
+CPSF3  -  cleavage and polyadenylation specific factor 3, 73kda<br>
+BRIP1  -  brca1 interacting protein c-terminal helicase 1<br>
+SMYD3  -  set and mynd domain containing 3<br>
+PSMA6  -  proteasome (prosome, macropain) subunit, alpha type, 6<br>
+WDR36  -  wd repeat domain 36<br>
+PSMA4  -  proteasome (prosome, macropain) subunit, alpha type, 4<br>
+NCAPD3  -  non-smc condensin ii complex, subunit d3<br>
+GTF2I  -  general transcription factor iii<br>
+ADAT2  -  adenosine deaminase, trna-specific 2<br>
+INTS7  -  integrator complex subunit 7<br>
+SGOL2  -  shugoshin-like 2 (s. pombe)<br>
+PSMD1  -  proteasome (prosome, macropain) 26s subunit, non-atpase, 1<br>
+CENPN  -  centromere protein n<br>
+POLR1A  -  polymerase (rna) i polypeptide a, 194kda<br>
+CENPJ  -  centromere protein j<br>
+MLF1IP  -  mlf1 interacting protein<br>
+RAD51AP1  -  rad51 associated protein 1<br>
+FANCI  -  fanconi anemia, complementation group i<br>
+DUSP10  -  dual specificity phosphatase 10<br>
+HIST1H2BD  -  histone cluster 1, h2bd<br>
+CENPE  -  centromere protein e, 312kda<br>
+SUPT16H  -  suppressor of ty 16 homolog (s. cerevisiae)<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+AURKB  -  aurora kinase b<br>
+H1F0  -  h1 histone family, member 0<br>
+GMNN  -  geminin, dna replication inhibitor<br>
+DDX21  -  dead (asp-glu-ala-asp) box helicase 21<br>
+KIAA0101  -  kiaa0101<br>
+WDHD1  -  wd repeat and hmg-box dna binding protein 1<br>
+HADH  -  hydroxyacyl-coa dehydrogenase<br>
+CEBPA  -  ccaat/enhancer binding protein (c/ebp), alpha<br>
+TICRR  -  topbp1-interacting checkpoint and replication regulator<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+CMAS  -  cytidine monophosphate n-acetylneuraminic acid synthetase<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+E2F7  -  e2f transcription factor 7<br>
+NMD3  -  nmd3 ribosome export adaptor<br>
+NPM1  -  nucleophosmin (nucleolar phosphoprotein b23, numatrin)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+GINS1  -  gins complex subunit 1 (psf1 homolog)<br>
+IBTK  -  inhibitor of bruton agammaglobulinemia tyrosine kinase<br>
+MAPK12  -  mitogen-activated protein kinase 12<br>
+HDGF  -  hepatoma-derived growth factor<br>
+CDCA8  -  cell division cycle associated 8<br>
+EIF3E  -  eukaryotic translation initiation factor 3, subunit e<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+EXO1  -  exonuclease 1<br>
+HIST1H3I  -  histone cluster 1, h3i<br>
+HIST1H2BO  -  histone cluster 1, h2bo<br>
+CCNE2  -  cyclin e2<br>
+HIST2H2BE  -  histone cluster 2, h2be<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+HIST1H3J  -  histone cluster 1, h3j<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+HIST1H3H  -  histone cluster 1, h3h<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+CHML  -  choroideremia-like (rab escort protein 2)<br>
+GPI  -  glucose-6-phosphate isomerase<br>
+WRN  -  werner syndrome, recq helicase-like<br>
+ATF3  -  activating transcription factor 3<br>
+HIST1H2BL  -  histone cluster 1, h2bl<br>
+ZNF367  -  zinc finger protein 367<br>
+HIST1H2BN  -  histone cluster 1, h2bn<br>
+WT1  -  wilms tumor 1<br>
+CHEK1  -  checkpoint kinase 1<br>
+WEE1  -  wee1 homolog (s. pombe)<br>
+RCC1  -  regulator of chromosome condensation 1<br>
+WHSC1  -  wolf-hirschhorn syndrome candidate 1<br>
+TWISTNB  -  twist neighbor<br>
+HIST2H4A  -  histone cluster 2, h4a<br>
+RAD51  -  rad51 recombinase<br>
+MCM4  -  minichromosome maintenance complex component 4<br>
+MCM3  -  minichromosome maintenance complex component 3<br>
+HIST1H4L  -  histone cluster 1, h4l<br>
+MCM6  -  minichromosome maintenance complex component 6<br>
+MCM5  -  minichromosome maintenance complex component 5<br>
+KIF4B  -  kinesin family member 4b<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+HIST1H4J  -  histone cluster 1, h4j<br>
+RTCB  -  rna 2',3'-cyclic phosphate and 5'-oh ligase<br>
+DUSP3  -  dual specificity phosphatase 3<br>
+GEN1  -  gen1 holliday junction 5' flap endonuclease<br>
+CENPW  -  centromere protein w<br>
+HJURP  -  holliday junction recognition protein<br>
+RAN  -  ran, member ras oncogene family<br>
+DKC1  -  dyskeratosis congenita 1, dyskerin<br>
+BARD1  -  brca1 associated ring domain 1<br>
+NEK2  -  nima-related kinase 2<br>
+SDPR  -  serum deprivation response<br>
+RAD54L  -  rad54-like (s. cerevisiae)<br>
+RIOK1  -  rio kinase 1<br>
+DYRK3  -  dual-specificity tyrosine-(y)-phosphorylation regulated kinase 3<br>
+CEP70  -  centrosomal protein 70kda<br>
+GTF3C6  -  general transcription factor iiic, polypeptide 6, alpha 35kda<br>
+ESCO2  -  establishment of sister chromatid cohesion n-acetyltransferase 2<br>
+TFDP2  -  transcription factor dp-2 (e2f dimerization partner 2)<br>
+PES1  -  pescadillo ribosomal biogenesis factor 1<br>
+TFEC  -  transcription factor ec<br>
+CENPO  -  centromere protein o<br>
+GINS2  -  gins complex subunit 2 (psf2 homolog)<br>
+CLSPN  -  claspin<br>
+RBBP8  -  retinoblastoma binding protein 8<br>
+MGLL  -  monoglyceride lipase<br>
+STAC3  -  sh3 and cysteine rich domain 3<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+SMOX  -  spermine oxidase<br>
+OIP5  -  opa interacting protein 5<br>
+PLEKHA5  -  pleckstrin homology domain containing, family a member 5<br>
+DNMT3B  -  dna (cytosine-5-)-methyltransferase 3 beta<br>
+MAFG  -  v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog g<br>
+POLQ  -  polymerase (dna directed), theta<br>
+XRCC2  -  x-ray repair complementing defective repair in chinese hamster cells 2<br>
+CKS1B  -  cdc28 protein kinase regulatory subunit 1b<br>
+HIST1H2BJ  -  histone cluster 1, h2bj<br>
+CDCA2  -  cell division cycle associated 2<br>
+DNA2  -  dna replication helicase/nuclease 2<br>
+NOP58  -  nop58 ribonucleoprotein<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0000793&amp;view=details' target="_blank">GO:0000793</a><a name=0000793></a></td>
+<td>condensed chromosome</td>
+<td  align=center>2.66E-4</td>
+<td  align=center>1.56E-2</td>
+<td  align=center>19.32 (1285,14,19,4)</td>
+<td>
+<a id="ctrl_elements_GO:0000793" href="javascript:toggle('elements_GO:0000793')">[+] Show genes</a><br>
+<div id="elements_GO:0000793" style="display:none"> <font size=1>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+MKI67  -  antigen identified by monoclonal antibody ki-67<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005829&amp;view=details' target="_blank">GO:0005829</a><a name=0005829></a></td>
+<td>cytosol</td>
+<td  align=center>4.05E-4</td>
+<td  align=center>2.23E-2</td>
+<td  align=center>1.10 (1285,450,930,357)</td>
+<td>
+<a id="ctrl_elements_GO:0005829" href="javascript:toggle('elements_GO:0005829')">[+] Show genes</a><br>
+<div id="elements_GO:0005829" style="display:none"> <font size=1>
+SPTA1  -  spectrin, alpha, erythrocytic 1 (elliptocytosis 2)<br>
+MCCC1  -  methylcrotonoyl-coa carboxylase 1 (alpha)<br>
+TADA1  -  transcriptional adaptor 1<br>
+BRCA2  -  breast cancer 2, early onset<br>
+CDT1  -  chromatin licensing and dna replication factor 1<br>
+DIAPH3  -  diaphanous-related formin 3<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+CHAF1B  -  chromatin assembly factor 1, subunit b (p60)<br>
+LDHB  -  lactate dehydrogenase b<br>
+STIP1  -  stress-induced-phosphoprotein 1<br>
+LDHA  -  lactate dehydrogenase a<br>
+ACACA  -  acetyl-coa carboxylase alpha<br>
+MOB1B  -  mob kinase activator 1b<br>
+ENO1  -  enolase 1, (alpha)<br>
+SPC24  -  spc24, ndc80 kinetochore complex component<br>
+LTV1  -  ltv1 homolog (s. cerevisiae)<br>
+IQGAP3  -  iq motif containing gtpase activating protein 3<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+HPRT1  -  hypoxanthine phosphoribosyltransferase 1<br>
+TUBG1  -  tubulin, gamma 1<br>
+NAA25  -  n(alpha)-acetyltransferase 25, natb auxiliary subunit<br>
+GGH  -  gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase)<br>
+SUGT1  -  sgt1, suppressor of g2 allele of skp1 (s. cerevisiae)<br>
+BLM  -  bloom syndrome, recq helicase-like<br>
+CHD1L  -  chromodomain helicase dna binding protein 1-like<br>
+ZC3HAV1L  -  zinc finger ccch-type, antiviral 1-like<br>
+BLMH  -  bleomycin hydrolase<br>
+EHHADH  -  enoyl-coa, hydratase/3-hydroxyacyl coa dehydrogenase<br>
+CNTLN  -  centlein, centrosomal protein<br>
+AKR1A1  -  aldo-keto reductase family 1, member a1 (aldehyde reductase)<br>
+GTPBP4  -  gtp binding protein 4<br>
+SORD  -  sorbitol dehydrogenase<br>
+SLC7A5  -  solute carrier family 7 (amino acid transporter light chain, l system), member 5<br>
+DCTPP1  -  dctp pyrophosphatase 1<br>
+NUDCD1  -  nudc domain containing 1<br>
+LMNA  -  lamin a/c<br>
+LMAN1  -  lectin, mannose-binding, 1<br>
+PRDX3  -  peroxiredoxin 3<br>
+PSMD14  -  proteasome (prosome, macropain) 26s subunit, non-atpase, 14<br>
+DPP3  -  dipeptidyl-peptidase 3<br>
+SNRPD1  -  small nuclear ribonucleoprotein d1 polypeptide 16kda<br>
+TPM4  -  tropomyosin 4<br>
+ABCE1  -  atp-binding cassette, sub-family e (oabp), member 1<br>
+SEH1L  -  seh1-like (s. cerevisiae)<br>
+HILPDA  -  hypoxia inducible lipid droplet-associated<br>
+SNCA  -  synuclein, alpha (non a4 component of amyloid precursor)<br>
+KIF18A  -  kinesin family member 18a<br>
+KIF15  -  kinesin family member 15<br>
+FSCN1  -  fascin homolog 1, actin-bundling protein (strongylocentrotus purpuratus)<br>
+IARS  -  isoleucyl-trna synthetase<br>
+CA1  -  carbonic anhydrase i<br>
+CCNA1  -  cyclin a1<br>
+MTMR2  -  myotubularin related protein 2<br>
+CA2  -  carbonic anhydrase ii<br>
+ADA  -  adenosine deaminase<br>
+AHI1  -  abelson helper integration site 1<br>
+GPSM2  -  g-protein signaling modulator 2<br>
+GCLC  -  glutamate-cysteine ligase, catalytic subunit<br>
+PPAT  -  phosphoribosyl pyrophosphate amidotransferase<br>
+PPA1  -  pyrophosphatase (inorganic) 1<br>
+TP53I3  -  tumor protein p53 inducible protein 3<br>
+CDCA7L  -  cell division cycle associated 7-like<br>
+PLIN2  -  perilipin 2<br>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+STMN1  -  stathmin 1<br>
+BYSL  -  bystin-like<br>
+C1QBP  -  complement component 1, q subcomponent binding protein<br>
+HSP90AB1  -  heat shock protein 90kda alpha (cytosolic), class b member 1<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+HSP90AB3P  -  heat shock protein 90kda alpha (cytosolic), class b member 3, pseudogene<br>
+HSPD1  -  heat shock 60kda protein 1 (chaperonin)<br>
+SPIN4  -  spindlin family, member 4<br>
+COMT  -  catechol-o-methyltransferase<br>
+HSP90AA1  -  heat shock protein 90kda alpha (cytosolic), class a member 1<br>
+KIF23  -  kinesin family member 23<br>
+ARL4A  -  adp-ribosylation factor-like 4a<br>
+RAB38  -  rab38, member ras oncogene family<br>
+POLA1  -  polymerase (dna directed), alpha 1, catalytic subunit<br>
+NET1  -  neuroepithelial cell transforming 1<br>
+HSPA5  -  heat shock 70kda protein 5 (glucose-regulated protein, 78kda)<br>
+ECT2  -  epithelial cell transforming sequence 2 oncogene<br>
+PDIA6  -  protein disulfide isomerase family a, member 6<br>
+RUVBL2  -  ruvb-like 2 (e. coli)<br>
+AKR1C3  -  aldo-keto reductase family 1, member c3<br>
+SPATS2  -  spermatogenesis associated, serine-rich 2<br>
+UROS  -  uroporphyrinogen iii synthase<br>
+UROD  -  uroporphyrinogen decarboxylase<br>
+ZWILCH  -  zwilch kinetochore protein<br>
+NUP107  -  nucleoporin 107kda<br>
+HMBS  -  hydroxymethylbilane synthase<br>
+CDCA4  -  cell division cycle associated 4<br>
+RASAL2  -  ras protein activator like 2<br>
+MTHFD1  -  methylenetetrahydrofolate dehydrogenase (nadp+ dependent) 1, methenyltetrahydrofolate cyclohydrolase, formyltetrahydrofolate synthetase<br>
+EIF3B  -  eukaryotic translation initiation factor 3, subunit b<br>
+FAH  -  fumarylacetoacetate hydrolase (fumarylacetoacetase)<br>
+HOMER3  -  homer homolog 3 (drosophila)<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CASP6  -  caspase 6, apoptosis-related cysteine peptidase<br>
+CENPI  -  centromere protein i<br>
+ZWINT  -  zw10 interacting kinetochore protein<br>
+UCK2  -  uridine-cytidine kinase 2<br>
+CTPS1  -  ctp synthase 1<br>
+CIT  -  citron (rho-interacting, serine/threonine kinase 21)<br>
+FARSA  -  phenylalanyl-trna synthetase, alpha subunit<br>
+LATS2  -  large tumor suppressor kinase 2<br>
+TOM1L1  -  target of myb1 (chicken)-like 1<br>
+DEPDC1B  -  dep domain containing 1b<br>
+EIF3M  -  eukaryotic translation initiation factor 3, subunit m<br>
+HK2  -  hexokinase 2<br>
+AHCY  -  adenosylhomocysteinase<br>
+KPNA2  -  karyopherin alpha 2 (rag cohort 1, importin alpha 1)<br>
+CASC5  -  cancer susceptibility candidate 5<br>
+KIF11  -  kinesin family member 11<br>
+DNAJB4  -  dnaj (hsp40) homolog, subfamily b, member 4<br>
+ZDHHC9  -  zinc finger, dhhc-type containing 9<br>
+FARSB  -  phenylalanyl-trna synthetase, beta subunit<br>
+CALR  -  calreticulin<br>
+DNM1L  -  dynamin 1-like<br>
+KIF4A  -  kinesin family member 4a<br>
+IFT122  -  intraflagellar transport 122 homolog (chlamydomonas)<br>
+BAALC  -  brain and acute leukemia, cytoplasmic<br>
+SMC4  -  structural maintenance of chromosomes 4<br>
+CENPP  -  centromere protein p<br>
+AURKA  -  aurora kinase a<br>
+RPS24  -  ribosomal protein s24<br>
+CABLES1  -  cdk5 and abl enzyme substrate 1<br>
+KIF14  -  kinesin family member 14<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+RBPMS  -  rna binding protein with multiple splicing<br>
+ERAL1  -  era-like 12s mitochondrial rrna chaperone 1<br>
+STAR  -  steroidogenic acute regulatory protein<br>
+CTNNAL1  -  catenin (cadherin-associated protein), alpha-like 1<br>
+CCNE1  -  cyclin e1<br>
+HOXB5  -  homeobox b5<br>
+THG1L  -  trna-histidine guanylyltransferase 1-like (s. cerevisiae)<br>
+E2F8  -  e2f transcription factor 8<br>
+OSBPL1A  -  oxysterol binding protein-like 1a<br>
+ESD  -  esterase d<br>
+ETS2  -  v-ets avian erythroblastosis virus e26 oncogene homolog 2<br>
+CDK2AP1  -  cyclin-dependent kinase 2 associated protein 1<br>
+TYMS  -  thymidylate synthetase<br>
+TXN  -  thioredoxin<br>
+CYFIP1  -  cytoplasmic fmr1 interacting protein 1<br>
+METAP2  -  methionyl aminopeptidase 2<br>
+CKAP2L  -  cytoskeleton associated protein 2-like<br>
+TSR1  -  tsr1, 20s rrna accumulation, homolog (s. cerevisiae)<br>
+MAPK6  -  mitogen-activated protein kinase 6<br>
+CAT  -  catalase<br>
+RAB32  -  rab32, member ras oncogene family<br>
+OSBPL5  -  oxysterol binding protein-like 5<br>
+RUNX1  -  runt-related transcription factor 1<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+CCNA2  -  cyclin a2<br>
+IMPAD1  -  inositol monophosphatase domain containing 1<br>
+CCNB1  -  cyclin b1<br>
+IPO11  -  importin 11<br>
+HMMR  -  hyaluronan-mediated motility receptor (rhamm)<br>
+MPP1  -  membrane protein, palmitoylated 1, 55kda<br>
+SLC27A2  -  solute carrier family 27 (fatty acid transporter), member 2<br>
+PRKAR2B  -  protein kinase, camp-dependent, regulatory, type ii, beta<br>
+KIF2C  -  kinesin family member 2c<br>
+AFMID  -  arylformamidase<br>
+GART  -  phosphoribosylglycinamide formyltransferase, phosphoribosylglycinamide synthetase, phosphoribosylaminoimidazole synthetase<br>
+RRM1  -  ribonucleotide reductase m1<br>
+RRM2  -  ribonucleotide reductase m2<br>
+CDC6  -  cell division cycle 6<br>
+CEP85  -  centrosomal protein 85kda<br>
+CDC25A  -  cell division cycle 25a<br>
+CDC20  -  cell division cycle 20<br>
+IL18  -  interleukin 18 (interferon-gamma-inducing factor)<br>
+PAICS  -  phosphoribosylaminoimidazole carboxylase, phosphoribosylaminoimidazole succinocarboxamide synthetase<br>
+GSTP1  -  glutathione s-transferase pi 1<br>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+DDX1  -  dead (asp-glu-ala-asp) box helicase 1<br>
+TCP1  -  t-complex 1<br>
+FLT3  -  fms-related tyrosine kinase 3<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+SGOL1  -  shugoshin-like 1 (s. pombe)<br>
+SOCS6  -  suppressor of cytokine signaling 6<br>
+GSN  -  gelsolin<br>
+PRTN3  -  proteinase 3<br>
+GSS  -  glutathione synthetase<br>
+CDCA7  -  cell division cycle associated 7<br>
+NIPSNAP3A  -  nipsnap homolog 3a (c. elegans)<br>
+SMC2  -  structural maintenance of chromosomes 2<br>
+TMEM97  -  transmembrane protein 97<br>
+CLIC4  -  chloride intracellular channel 4<br>
+PCBD1  -  pterin-4 alpha-carbinolamine dehydratase/dimerization cofactor of hepatocyte nuclear factor 1 alpha<br>
+ZAK  -  sterile alpha motif and leucine zipper containing kinase azk<br>
+CD151  -  cd151 molecule (raph blood group)<br>
+RUSC2  -  run and sh3 domain containing 2<br>
+PPFIBP1  -  ptprf interacting protein, binding protein 1 (liprin beta 1)<br>
+IMPDH2  -  imp (inosine 5'-monophosphate) dehydrogenase 2<br>
+PSMA1  -  proteasome (prosome, macropain) subunit, alpha type, 1<br>
+PCCB  -  propionyl coa carboxylase, beta polypeptide<br>
+TNS3  -  tensin 3<br>
+ANKRD28  -  ankyrin repeat domain 28<br>
+CDCA5  -  cell division cycle associated 5<br>
+IGF2BP2  -  insulin-like growth factor 2 mrna binding protein 2<br>
+SMYD3  -  set and mynd domain containing 3<br>
+PSMA6  -  proteasome (prosome, macropain) subunit, alpha type, 6<br>
+SPC25  -  spc25, ndc80 kinetochore complex component<br>
+PSMA4  -  proteasome (prosome, macropain) subunit, alpha type, 4<br>
+OCRL  -  oculocerebrorenal syndrome of lowe<br>
+KLHL13  -  kelch-like family member 13<br>
+SGOL2  -  shugoshin-like 2 (s. pombe)<br>
+AGPS  -  alkylglycerone phosphate synthase<br>
+CCL3  -  chemokine (c-c motif) ligand 3<br>
+PSMD1  -  proteasome (prosome, macropain) 26s subunit, non-atpase, 1<br>
+CENPN  -  centromere protein n<br>
+FAM72A  -  family with sequence similarity 72, member a<br>
+RHOBTB1  -  rho-related btb domain containing 1<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+CENPJ  -  centromere protein j<br>
+MLF1IP  -  mlf1 interacting protein<br>
+OPHN1  -  oligophrenin 1<br>
+MSRB3  -  methionine sulfoxide reductase b3<br>
+PTTG1  -  pituitary tumor-transforming 1<br>
+DUSP10  -  dual specificity phosphatase 10<br>
+FANCI  -  fanconi anemia, complementation group i<br>
+CMBL  -  carboxymethylenebutenolidase homolog (pseudomonas)<br>
+CKAP5  -  cytoskeleton associated protein 5<br>
+HIST1H2BD  -  histone cluster 1, h2bd<br>
+DLGAP5  -  discs, large (drosophila) homolog-associated protein 5<br>
+CENPE  -  centromere protein e, 312kda<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+AURKB  -  aurora kinase b<br>
+PRDX4  -  peroxiredoxin 4<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+YARS  -  tyrosyl-trna synthetase<br>
+HBA2  -  hemoglobin, alpha 2<br>
+GMNN  -  geminin, dna replication inhibitor<br>
+TARS  -  threonyl-trna synthetase<br>
+DDX21  -  dead (asp-glu-ala-asp) box helicase 21<br>
+NLRP3  -  nlr family, pyrin domain containing 3<br>
+NUCB2  -  nucleobindin 2<br>
+PDGFC  -  platelet derived growth factor c<br>
+CDK6  -  cyclin-dependent kinase 6<br>
+DARS  -  aspartyl-trna synthetase<br>
+DNAJC6  -  dnaj (hsp40) homolog, subfamily c, member 6<br>
+CDK4  -  cyclin-dependent kinase 4<br>
+NPM1  -  nucleophosmin (nucleolar phosphoprotein b23, numatrin)<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+ARHGAP11A  -  rho gtpase activating protein 11a<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+HBG2  -  hemoglobin, gamma g<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+CDKN3  -  cyclin-dependent kinase inhibitor 3<br>
+TBCA  -  tubulin folding cofactor a<br>
+CDKN2C  -  cyclin-dependent kinase inhibitor 2c (p18, inhibits cdk4)<br>
+MAPK12  -  mitogen-activated protein kinase 12<br>
+HPGDS  -  hematopoietic prostaglandin d synthase<br>
+DAB2  -  dab, mitogen-responsive phosphoprotein, homolog 2 (drosophila)<br>
+HDC  -  histidine decarboxylase<br>
+CDCA8  -  cell division cycle associated 8<br>
+EIF3E  -  eukaryotic translation initiation factor 3, subunit e<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+CDK2  -  cyclin-dependent kinase 2<br>
+CCNB2  -  cyclin b2<br>
+HIST1H2BO  -  histone cluster 1, h2bo<br>
+CCNE2  -  cyclin e2<br>
+HIST2H2BE  -  histone cluster 2, h2be<br>
+AIFM1  -  apoptosis-inducing factor, mitochondrion-associated, 1<br>
+BTBD3  -  btb (poz) domain containing 3<br>
+TK1  -  thymidine kinase 1, soluble<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+LARS  -  leucyl-trna synthetase<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+PGD  -  phosphogluconate dehydrogenase<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+XPNPEP1  -  x-prolyl aminopeptidase (aminopeptidase p) 1, soluble<br>
+ALDH18A1  -  aldehyde dehydrogenase 18 family, member a1<br>
+NCAPH  -  non-smc condensin i complex, subunit h<br>
+CHML  -  choroideremia-like (rab escort protein 2)<br>
+PNP  -  purine nucleoside phosphorylase<br>
+TTC7B  -  tetratricopeptide repeat domain 7b<br>
+CDCA3  -  cell division cycle associated 3<br>
+NAA15  -  n(alpha)-acetyltransferase 15, nata auxiliary subunit<br>
+HIST1H2BF  -  histone cluster 1, h2bf<br>
+GPI  -  glucose-6-phosphate isomerase<br>
+CHKA  -  choline kinase alpha<br>
+ESPL1  -  extra spindle pole bodies homolog 1 (s. cerevisiae)<br>
+HIST1H2BL  -  histone cluster 1, h2bl<br>
+AMOTL1  -  angiomotin like 1<br>
+HIST1H2BN  -  histone cluster 1, h2bn<br>
+WT1  -  wilms tumor 1<br>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+USP14  -  ubiquitin specific peptidase 14 (trna-guanine transglycosylase)<br>
+CHEK1  -  checkpoint kinase 1<br>
+NUP43  -  nucleoporin 43kda<br>
+QPRT  -  quinolinate phosphoribosyltransferase<br>
+STARD8  -  star-related lipid transfer (start) domain containing 8<br>
+RAD51  -  rad51 recombinase<br>
+IDH1  -  isocitrate dehydrogenase 1 (nadp+), soluble<br>
+STON2  -  stonin 2<br>
+MCM5  -  minichromosome maintenance complex component 5<br>
+KIF4B  -  kinesin family member 4b<br>
+PFKP  -  phosphofructokinase, platelet<br>
+RTCB  -  rna 2',3'-cyclic phosphate and 5'-oh ligase<br>
+KNTC1  -  kinetochore associated 1<br>
+PFAS  -  phosphoribosylformylglycinamidine synthase<br>
+DUSP3  -  dual specificity phosphatase 3<br>
+RABGGTB  -  rab geranylgeranyltransferase, beta subunit<br>
+PTPLAD1  -  protein tyrosine phosphatase-like a domain containing 1<br>
+RHOBTB3  -  rho-related btb domain containing 3<br>
+RAB13  -  rab13, member ras oncogene family<br>
+HJURP  -  holliday junction recognition protein<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+MAP7  -  microtubule-associated protein 7<br>
+RAN  -  ran, member ras oncogene family<br>
+RANBP1  -  ran binding protein 1<br>
+NEK2  -  nima-related kinase 2<br>
+CTPS2  -  ctp synthase 2<br>
+DLG4  -  discs, large homolog 4 (drosophila)<br>
+SDPR  -  serum deprivation response<br>
+PHLDA1  -  pleckstrin homology-like domain, family a, member 1<br>
+GPX1  -  glutathione peroxidase 1<br>
+RIOK1  -  rio kinase 1<br>
+DYRK3  -  dual-specificity tyrosine-(y)-phosphorylation regulated kinase 3<br>
+CEP70  -  centrosomal protein 70kda<br>
+SH3RF1  -  sh3 domain containing ring finger 1<br>
+PES1  -  pescadillo ribosomal biogenesis factor 1<br>
+PLA2G4A  -  phospholipase a2, group iva (cytosolic, calcium-dependent)<br>
+DHFR  -  dihydrofolate reductase<br>
+KIAA1524  -  kiaa1524<br>
+DIAPH2  -  diaphanous-related formin 2<br>
+CLU  -  clusterin<br>
+STIL  -  scl/tal1 interrupting locus<br>
+CENPO  -  centromere protein o<br>
+PHACTR1  -  phosphatase and actin regulator 1<br>
+ARHGAP11B  -  rho gtpase activating protein 11b<br>
+MGLL  -  monoglyceride lipase<br>
+STAC3  -  sh3 and cysteine rich domain 3<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+MAD2L1  -  mad2 mitotic arrest deficient-like 1 (yeast)<br>
+SMOX  -  spermine oxidase<br>
+SMAD1  -  smad family member 1<br>
+OIP5  -  opa interacting protein 5<br>
+PLEKHA5  -  pleckstrin homology domain containing, family a member 5<br>
+PLK4  -  polo-like kinase 4<br>
+DOCK1  -  dedicator of cytokinesis 1<br>
+ALS2  -  amyotrophic lateral sclerosis 2 (juvenile)<br>
+NEDD4  -  neural precursor cell expressed, developmentally down-regulated 4, e3 ubiquitin protein ligase<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+SELENBP1  -  selenium binding protein 1<br>
+CDCA2  -  cell division cycle associated 2<br>
+HIST1H2BJ  -  histone cluster 1, h2bj<br>
+TTF2  -  transcription termination factor, rna polymerase ii<br>
+EIF5B  -  eukaryotic translation initiation factor 5b<br>
+C11orf74  -  chromosome 11 open reading frame 74<br>
+NOP58  -  nop58 ribonucleoprotein<br>
+YWHAE  -  tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, epsilon polypeptide<br>
+BCAT1  -  branched chain amino-acid transaminase 1, cytosolic<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0005694&amp;view=details' target="_blank">GO:0005694</a><a name=0005694></a></td>
+<td>chromosome</td>
+<td  align=center>4.07E-4</td>
+<td  align=center>2.12E-2</td>
+<td  align=center>7.34 (1285,49,25,7)</td>
+<td>
+<a id="ctrl_elements_GO:0005694" href="javascript:toggle('elements_GO:0005694')">[+] Show genes</a><br>
+<div id="elements_GO:0005694" style="display:none"> <font size=1>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+MKI67  -  antigen identified by monoclonal antibody ki-67<br>
+PLK4  -  polo-like kinase 4<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0099081&amp;view=details' target="_blank">GO:0099081</a><a name=0099081></a></td>
+<td>supramolecular polymer</td>
+<td  align=center>4.12E-4</td>
+<td  align=center>2.03E-2</td>
+<td  align=center>1.33 (1285,68,850,60)</td>
+<td>
+<a id="ctrl_elements_GO:0099081" href="javascript:toggle('elements_GO:0099081')">[+] Show genes</a><br>
+<div id="elements_GO:0099081" style="display:none"> <font size=1>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+AIF1L  -  allograft inflammatory factor 1-like<br>
+TCP1  -  t-complex 1<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+MNS1  -  meiosis-specific nuclear structural 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CLIP2  -  cap-gly domain containing linker protein 2<br>
+PLK1  -  polo-like kinase 1<br>
+PSMA6  -  proteasome (prosome, macropain) subunit, alpha type, 6<br>
+TPX2  -  tpx2, microtubule-associated<br>
+TUBG1  -  tubulin, gamma 1<br>
+SLC1A4  -  solute carrier family 1 (glutamate/neutral amino acid transporter), member 4<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+KIF4B  -  kinesin family member 4b<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+CENPJ  -  centromere protein j<br>
+KIF4A  -  kinesin family member 4a<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+KNTC1  -  kinetochore associated 1<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+KIF14  -  kinesin family member 14<br>
+TPM4  -  tropomyosin 4<br>
+MAP7  -  microtubule-associated protein 7<br>
+ZNF804A  -  zinc finger protein 804a<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+TUBB  -  tubulin, beta class i<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+LTBP1  -  latent transforming growth factor beta binding protein 1<br>
+STMN1  -  stathmin 1<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+TBCA  -  tubulin folding cofactor a<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+KIF20A  -  kinesin family member 20a<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+KIF23  -  kinesin family member 23<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0099080&amp;view=details' target="_blank">GO:0099080</a><a name=0099080></a></td>
+<td>supramolecular complex</td>
+<td  align=center>4.12E-4</td>
+<td  align=center>1.93E-2</td>
+<td  align=center>1.33 (1285,68,850,60)</td>
+<td>
+<a id="ctrl_elements_GO:0099080" href="javascript:toggle('elements_GO:0099080')">[+] Show genes</a><br>
+<div id="elements_GO:0099080" style="display:none"> <font size=1>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+AIF1L  -  allograft inflammatory factor 1-like<br>
+TCP1  -  t-complex 1<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+MNS1  -  meiosis-specific nuclear structural 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CLIP2  -  cap-gly domain containing linker protein 2<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+PSMA6  -  proteasome (prosome, macropain) subunit, alpha type, 6<br>
+TUBG1  -  tubulin, gamma 1<br>
+SLC1A4  -  solute carrier family 1 (glutamate/neutral amino acid transporter), member 4<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+KIF4B  -  kinesin family member 4b<br>
+CENPJ  -  centromere protein j<br>
+KIF4A  -  kinesin family member 4a<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+KNTC1  -  kinetochore associated 1<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+KIF14  -  kinesin family member 14<br>
+TPM4  -  tropomyosin 4<br>
+MAP7  -  microtubule-associated protein 7<br>
+ZNF804A  -  zinc finger protein 804a<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+TUBB  -  tubulin, beta class i<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+LTBP1  -  latent transforming growth factor beta binding protein 1<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+STMN1  -  stathmin 1<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+TBCA  -  tubulin folding cofactor a<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+KIF20A  -  kinesin family member 20a<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+KIF23  -  kinesin family member 23<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0099512&amp;view=details' target="_blank">GO:0099512</a><a name=0099512></a></td>
+<td>supramolecular fiber</td>
+<td  align=center>4.12E-4</td>
+<td  align=center>1.84E-2</td>
+<td  align=center>1.33 (1285,68,850,60)</td>
+<td>
+<a id="ctrl_elements_GO:0099512" href="javascript:toggle('elements_GO:0099512')">[+] Show genes</a><br>
+<div id="elements_GO:0099512" style="display:none"> <font size=1>
+BIRC5  -  baculoviral iap repeat containing 5<br>
+CDK1  -  cyclin-dependent kinase 1<br>
+AIF1L  -  allograft inflammatory factor 1-like<br>
+TCP1  -  t-complex 1<br>
+NME2  -  nme/nm23 nucleoside diphosphate kinase 2<br>
+GTSE1  -  g-2 and s-phase expressed 1<br>
+RACGAP1  -  rac gtpase activating protein 1<br>
+MNS1  -  meiosis-specific nuclear structural 1<br>
+DYNLL1  -  dynein, light chain, lc8-type 1<br>
+CLIP2  -  cap-gly domain containing linker protein 2<br>
+PLK1  -  polo-like kinase 1<br>
+TPX2  -  tpx2, microtubule-associated<br>
+PSMA6  -  proteasome (prosome, macropain) subunit, alpha type, 6<br>
+TUBG1  -  tubulin, gamma 1<br>
+SLC1A4  -  solute carrier family 1 (glutamate/neutral amino acid transporter), member 4<br>
+KIF11  -  kinesin family member 11<br>
+KIFC1  -  kinesin family member c1<br>
+DNM1L  -  dynamin 1-like<br>
+SKA1  -  spindle and kinetochore associated complex subunit 1<br>
+KIF4B  -  kinesin family member 4b<br>
+CENPJ  -  centromere protein j<br>
+KIF4A  -  kinesin family member 4a<br>
+TUBA1C  -  tubulin, alpha 1c<br>
+KNTC1  -  kinetochore associated 1<br>
+LMNB1  -  lamin b1<br>
+LMNA  -  lamin a/c<br>
+AURKA  -  aurora kinase a<br>
+PRC1  -  protein regulator of cytokinesis 1<br>
+CCT6A  -  chaperonin containing tcp1, subunit 6a (zeta 1)<br>
+KIF14  -  kinesin family member 14<br>
+TPM4  -  tropomyosin 4<br>
+MAP7  -  microtubule-associated protein 7<br>
+ZNF804A  -  zinc finger protein 804a<br>
+NEK2  -  nima-related kinase 2<br>
+CENPE  -  centromere protein e, 312kda<br>
+DNAH14  -  dynein, axonemal, heavy chain 14<br>
+TUBB  -  tubulin, beta class i<br>
+KIF18A  -  kinesin family member 18a<br>
+AURKB  -  aurora kinase b<br>
+KIF15  -  kinesin family member 15<br>
+DYNC2LI1  -  dynein, cytoplasmic 2, light intermediate chain 1<br>
+SKA2  -  spindle and kinetochore associated complex subunit 2<br>
+TUBB6  -  tubulin, beta 6 class v<br>
+LTBP1  -  latent transforming growth factor beta binding protein 1<br>
+CCT7  -  chaperonin containing tcp1, subunit 7 (eta)<br>
+DYNC1I2  -  dynein, cytoplasmic 1, intermediate chain 2<br>
+STMN1  -  stathmin 1<br>
+SPRY2  -  sprouty homolog 2 (drosophila)<br>
+CCT2  -  chaperonin containing tcp1, subunit 2 (beta)<br>
+CCT4  -  chaperonin containing tcp1, subunit 4 (delta)<br>
+NUSAP1  -  nucleolar and spindle associated protein 1<br>
+TBCA  -  tubulin folding cofactor a<br>
+SKA3  -  spindle and kinetochore associated complex subunit 3<br>
+KIF20A  -  kinesin family member 20a<br>
+YES1  -  v-yes-1 yamaguchi sarcoma viral oncogene homolog 1<br>
+LRPPRC  -  leucine-rich pentatricopeptide repeat containing<br>
+GAS2L3  -  growth arrest-specific 2 like 3<br>
+KIF23  -  kinesin family member 23<br>
+KIF2C  -  kinesin family member 2c<br>
+RCC2  -  regulator of chromosome condensation 2<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0070938&amp;view=details' target="_blank">GO:0070938</a><a name=0070938></a></td>
+<td>contractile ring</td>
+<td  align=center>7.88E-4</td>
+<td  align=center>3.35E-2</td>
+<td  align=center>49.42 (1285,2,26,2)</td>
+<td>
+<a id="ctrl_elements_GO:0070938" href="javascript:toggle('elements_GO:0070938')">[+] Show genes</a><br>
+<div id="elements_GO:0070938" style="display:none"> <font size=1>
+PRC1  -  protein regulator of cytokinesis 1<br>
+ANLN  -  anillin, actin binding protein<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0043232&amp;view=details' target="_blank">GO:0043232</a><a name=0043232></a></td>
+<td>intracellular non-membrane-bounded organelle</td>
+<td  align=center>7.89E-4</td>
+<td  align=center>3.21E-2</td>
+<td  align=center>2.22 (1285,289,46,23)</td>
+<td>
+<a id="ctrl_elements_GO:0043232" href="javascript:toggle('elements_GO:0043232')">[+] Show genes</a><br>
+<div id="elements_GO:0043232" style="display:none"> <font size=1>
+PRC1  -  protein regulator of cytokinesis 1<br>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+TPX2  -  tpx2, microtubule-associated<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+PLK4  -  polo-like kinase 4<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+ANLN  -  anillin, actin binding protein<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+KIF11  -  kinesin family member 11<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+KIF23  -  kinesin family member 23<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+MKI67  -  antigen identified by monoclonal antibody ki-67<br>
+SCCPDH  -  saccharopine dehydrogenase (putative)<br>
+MLF1IP  -  mlf1 interacting protein<br>
+CLU  -  clusterin<br>
+CIT  -  citron (rho-interacting, serine/threonine kinase 21)<br>
+TYMS  -  thymidylate synthetase<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0031261&amp;view=details' target="_blank">GO:0031261</a><a name=0031261></a></td>
+<td>DNA replication preinitiation complex</td>
+<td  align=center>8.75E-4</td>
+<td  align=center>3.41E-2</td>
+<td  align=center>12.60 (1285,3,102,3)</td>
+<td>
+<a id="ctrl_elements_GO:0031261" href="javascript:toggle('elements_GO:0031261')">[+] Show genes</a><br>
+<div id="elements_GO:0031261" style="display:none"> <font size=1>
+CDC45  -  cell division cycle 45<br>
+GINS1  -  gins complex subunit 1 (psf1 homolog)<br>
+GINS2  -  gins complex subunit 2 (psf2 homolog)<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0043228&amp;view=details' target="_blank">GO:0043228</a><a name=0043228></a></td>
+<td>non-membrane-bounded organelle</td>
+<td  align=center>8.89E-4</td>
+<td  align=center>3.33E-2</td>
+<td  align=center>2.21 (1285,291,46,23)</td>
+<td>
+<a id="ctrl_elements_GO:0043228" href="javascript:toggle('elements_GO:0043228')">[+] Show genes</a><br>
+<div id="elements_GO:0043228" style="display:none"> <font size=1>
+PRC1  -  protein regulator of cytokinesis 1<br>
+NCAPG  -  non-smc condensin i complex, subunit g<br>
+CHEK1  -  checkpoint kinase 1<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+TPX2  -  tpx2, microtubule-associated<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+CENPF  -  centromere protein f, 350/400kda<br>
+PLK4  -  polo-like kinase 4<br>
+DTL  -  denticleless e3 ubiquitin protein ligase homolog (drosophila)<br>
+ANLN  -  anillin, actin binding protein<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+KIF11  -  kinesin family member 11<br>
+CCDC88A  -  coiled-coil domain containing 88a<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+TOP2A  -  topoisomerase (dna) ii alpha 170kda<br>
+KIF23  -  kinesin family member 23<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+MKI67  -  antigen identified by monoclonal antibody ki-67<br>
+SCCPDH  -  saccharopine dehydrogenase (putative)<br>
+MLF1IP  -  mlf1 interacting protein<br>
+CLU  -  clusterin<br>
+CIT  -  citron (rho-interacting, serine/threonine kinase 21)<br>
+TYMS  -  thymidylate synthetase<br>
+</FONT></div>
+</td>
+</tr>
+<tr>
+<td><a href='http://www.godatabase.org/cgi-bin/amigo/go.cgi?query=GO:0044454&amp;view=details' target="_blank">GO:0044454</a><a name=0044454></a></td>
+<td>nuclear chromosome part</td>
+<td  align=center>8.94E-4</td>
+<td  align=center>3.22E-2</td>
+<td  align=center>1.96 (1285,99,212,32)</td>
+<td>
+<a id="ctrl_elements_GO:0044454" href="javascript:toggle('elements_GO:0044454')">[+] Show genes</a><br>
+<div id="elements_GO:0044454" style="display:none"> <font size=1>
+CDK1  -  cyclin-dependent kinase 1<br>
+TCP1  -  t-complex 1<br>
+HIST1H1B  -  histone cluster 1, h1b<br>
+BRCA2  -  breast cancer 2, early onset<br>
+ORC1  -  origin recognition complex, subunit 1<br>
+NUF2  -  nuf2, ndc80 kinetochore complex component<br>
+HMGB3  -  high mobility group box 3<br>
+UHRF1  -  ubiquitin-like with phd and ring finger domains 1<br>
+ESCO2  -  establishment of sister chromatid cohesion n-acetyltransferase 2<br>
+HIST1H3B  -  histone cluster 1, h3b<br>
+CHAF1B  -  chromatin assembly factor 1, subunit b (p60)<br>
+NCAPH  -  non-smc condensin i complex, subunit h<br>
+MCM10  -  minichromosome maintenance complex component 10<br>
+WDHD1  -  wd repeat and hmg-box dna binding protein 1<br>
+CDC45  -  cell division cycle 45<br>
+GINS2  -  gins complex subunit 2 (psf2 homolog)<br>
+PCNA  -  proliferating cell nuclear antigen<br>
+BUB1  -  bub1 mitotic checkpoint serine/threonine kinase<br>
+BUB1B  -  bub1 mitotic checkpoint serine/threonine kinase b<br>
+RCC1  -  regulator of chromosome condensation 1<br>
+HIST2H2AA4  -  histone cluster 2, h2aa4<br>
+GINS1  -  gins complex subunit 1 (psf1 homolog)<br>
+H2AFY  -  h2a histone family, member y<br>
+CHAF1A  -  chromatin assembly factor 1, subunit a (p150)<br>
+MCM4  -  minichromosome maintenance complex component 4<br>
+RAD51  -  rad51 recombinase<br>
+POLE2  -  polymerase (dna directed), epsilon 2, accessory subunit<br>
+CCNB1  -  cyclin b1<br>
+MCM2  -  minichromosome maintenance complex component 2<br>
+EZH2  -  enhancer of zeste homolog 2 (drosophila)<br>
+HIST1H4J  -  histone cluster 1, h4j<br>
+RAD51AP1  -  rad51 associated protein 1<br>
+</FONT></div>
+</td>
+</tr>
+</table>
+<p>Species used: Homo sapiens</p><p>The system has recognized 1366 genes out of 1388 gene terms entered by the user.<br> 1365 genes were recognized by gene symbol and 1 genes by other gene IDs .<br>Only 1285 of these genes are associated with a GO term.<br></p>
+<p> The GOrilla database is periodically updated using the <a href='http://www.geneontology.org/'>GO database</a> and other sources.<br>
+The GOrilla database was last updated on Jul 6, 2019</p>
+<p>This results page will be available on this site for one month from now (until 
+Aug 10, 2019
+). You can bookmark this page and come back to it later.
+</p>
+<a name='p_value_info'></a><br><b>'P-value'</b> is the enrichment p-value computed according to the mHG or HG model. This p-value is not corrected for multiple testing of 936 GO terms.<br>
+<a name='fdr_info'></a><br><b>'FDR q-value'</b> is the correction of the above p-value for multiple testing using the Benjamini and Hochberg (1995) method. <br>Namely, for the i<sup>th</sup> term (ranked according to p-value) the FDR q-value is (p-value * number of GO terms) / i. <br>
+<a name='enrich_info'></a><br><b>Enrichment (N, B, n, b)</b> is defined as follows:<br>N - is the total number of genes<br>B - is the total number of genes associated with a specific GO term<br>n - is the number of genes in the top of the user's input list or in the target set when appropriate<br>b - is the number of genes in the intersection<br>Enrichment = (b/n) / (B/N)<br>
+<a name='genes_info'></a><br><b>Genes:</b> For each GO term you can see the list of associated genes that appear in the optimal top of the list.<br>Each gene name is specified by gene symbol followed by a short description of the gene <br>
+<p>
+<a href='http://cbl-gorilla.cs.technion.ac.il/'> Back to the GOrilla main page </a>
+</p>
+</body>
+</html>
