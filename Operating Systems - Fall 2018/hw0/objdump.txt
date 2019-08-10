@@ -1,0 +1,33 @@
+-> file format: 
+	wc:     file format elf64-x86-64
+
+-> architecture:
+	architecture: i386:x86-64
+
+-> some section names:
+	 .interp
+	 .dynsym
+	 .dynstr
+	 .gnu.version
+	 .gnu.version_r
+	 .rela.dyn
+	 .rela.plt
+	 .init
+	 .plt
+	 .text
+	 .fini
+	 .rodata
+	 .fini_array
+	 .init_array 
+	 .dynamic
+	 .got
+	 .data 
+	 .bss
+	 .comment
+	 .debug_info
+
+-> segment that contains main: .text
+	main's address: 000000000040074f (same as gdb output)
+	000000000040074f g     F .text	000000000000014e              main
+
+-> no, stack/heap segment couldn't be found because they are runtime concepts and they don't have any segment in the executable. They are created automatically at process(heap) or thread(stack) creation since they are dynamically used.

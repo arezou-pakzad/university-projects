@@ -1,0 +1,40 @@
+
+                   ____                  
+                _.' :  `._               
+            .-.'`.  ;   .'`.-.           
+   __      / : ___ ;  /___ ;       __  
+ ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+ :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+      `:-.._J '-.-'L__ `-- ' L_..-;'     
+        "-.__ ;  .-"  "-.  : __.-"       
+            L ' /.------. ' J           
+             "-.   "--"   .-"            
+            __.l"-:_JL_;-";.__           
+         .-j/'.;  ;""""  / .'"-.        
+       .' /:`. "-.:     .-" .';  `.      
+    .-"  / ;  "-. "-..-" .-"  :    "-.   
+ .+"-.  : :      "-.__.-"      ;-._     
+ ;   `.; ;                    : : "+. ; 
+
+
+Date: Sat Dec 01 2018 13:06:33 GMT+0330 (+0330)
+httpserver
+	test file integrity ... PASS [1/1]
+	test request metadata ... PASS [1/1]
+	test large file ... PASS [1/1]
+	test nonexistent file ... PASS [1/1]
+	test status header ... PASS [1/1]
+	test default file ... PASS [1/1]
+	test directory list ... PASS [1/1]
+	test cutting connection ... PASS [1/1]
+
+httpproxy
+	test file download through proxy ... PASS [1/1]
+	test large file download through proxy ... PASS [1/1]
+	test multi-threading (5 threads) ... PASS [1/1]
+	test multi-threading (10 threads) ... FAIL [0/1]
+	test pass-through proxy ... PASS [1/1]
+
+-------------------
+score : 12/13
+:)

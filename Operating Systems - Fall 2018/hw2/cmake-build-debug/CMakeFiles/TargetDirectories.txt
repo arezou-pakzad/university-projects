@@ -1,0 +1,3 @@
+/Users/arezou/Documents/University/Operating Systems/Repository/ce424-971-95105432/hw2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/arezou/Documents/University/Operating Systems/Repository/ce424-971-95105432/hw2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arezou/Documents/University/Operating Systems/Repository/ce424-971-95105432/hw2/cmake-build-debug/CMakeFiles/hw2.dir

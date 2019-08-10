@@ -1,0 +1,38 @@
+vagrant@development:~/code/ce424-971-95105432/hw0$ ./map
+_main  @ 0x4005c2
+recur @ 0x40057d
+_main stack: 0x7ffe8861ea3c
+static data: 0x601048
+Heap: malloc 1: 0x1bac010
+Heap: malloc 2: 0x1bac080
+recur call 3: stack@ 0x7ffe8861ea0c
+recur call 2: stack@ 0x7ffe8861e9dc
+recur call 1: stack@ 0x7ffe8861e9ac
+recur call 0: stack@ 0x7ffe8861e97c
+
+-> addresses: main, recur, stuff can be found in objdump output.
+
+addresses 				segment
+
+000000000040057d g     F .text	0000000000000045              recur
+0000000000601048 g     O .data	0000000000000004              stuff
+00000000004005c2 g     F .text	00000000000000ba              main
+
+-> important sections:
+	.text: programs assembley code. _start and main are both part of the .text section. executable and read-only.
+	.data: holds initialized data used in program's memory image.
+	.rodata: where read-only data is stored.
+	.interp: the filename of the dynamic linker. read-write.
+	.comment: contains version control information.
+	.dynamic: dynamic linking information.
+	.init: holds executable instructions that contribute to the process initialization code.
+
+-> observation: with each recursive call stack grows and stack address decreases.  
+	=> stack grows from top to bottom
+
+-> stack frame: difference between two sequential stack addresse = |0x7ffe8861e9ac - 0x7ffe8861e97c| = 0x30 
+	=> 48 bytes
+
+-> no, they are not contiguous: 
+	0x1bac010(buf1 address) + 0x64(buf1 size) = 0x1bac074 is not equal 0x1bac080(buf2 address)
+

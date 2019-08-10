@@ -1,0 +1,75 @@
+-> where: 
+	#0  main (argc=2, argv=0x7fffffffe608) at wc.c:51
+
+-> backtrace(bt):
+	#0  main (argc=2, argv=0x7fffffffe608) at wc.c:51
+
+-> print argv:
+	$1 = (char **) 0x7fffffffe608
+
+-> print argv[0]:
+	$2 = 0x7fffffffe832 "/home/vagrant/code/ce424-971-95105432/hw0/wc"
+
+-> print main:
+	$3 = {int (int, char **)} 0x40074f <main>
+
+-> info stack
+	#0  main (argc=2, argv=0x7fffffffe608) at wc.c:51
+
+	Observations:
+		This command prints a backtrace of stack frames and is similar to backtrace(bt).
+
+-> info frame:
+	Stack level 0, frame at 0x7fffffffe530:
+ 	 rip = 0x4007c3 in main (wc.c:51); saved rip = 0x7ffff7a32f45
+ 	 source language c.
+ 	 Arglist at 0x7fffffffe520, args: argc=2, argv=0x7fffffffe608
+ 	 Locals at 0x7fffffffe520, Previous frame's sp is 0x7fffffffe530
+ 	 Saved registers:
+ 	  rbp at 0x7fffffffe520, rip at 0x7fffffffe528
+
+ 	Observations(from this source: https://sourceware.org/gdb/onlinedocs/gdb/Frame-Info.html):
+ 		This command prints a verbose description of the selected stack frame, including:
+
+		-the address of the frame
+		-the address of the next frame down (called by this frame)
+		-the address of the next frame up (caller of this frame)
+		-the language in which the source code corresponding to this frame is written
+		-the address of the frame’s arguments
+		-the address of the frame’s local variables
+		-the program counter saved in it (the address of execution in the caller frame)
+		-which registers were saved in the frame
+
+		The verbose description is useful when something has gone wrong that has made the stack format fail to fit the usual conventions.
+
+-> info registers:
+	rax            0x34     52
+	rbx            0x0      0
+	rcx            0x2d     45
+	rdx            0x0      0
+	rsi            0x40093a 4196666
+	rdi            0x7fffffffe85f   140737488349279
+	rbp            0x7fffffffe520   0x7fffffffe520
+	rsp            0x7fffffffe500   0x7fffffffe500
+	r8             0xffff   65535
+	r9             0x0      0
+	r10            0x7ffff7b556f0   140737349244656
+	r11            0x7ffff7b54a80   140737349241472
+	r12            0x400560 4195680
+	r13            0x7fffffffe600   140737488348672
+	r14            0x0      0
+	r15            0x0      0
+	rip            0x4007cd 0x4007cd <main+126>
+	eflags         0x202    [ IF ]
+	cs             0x33     51
+	ss             0x2b     43
+	ds             0x0      0
+	es             0x0      0
+	fs             0x0      0
+	gs             0x0      0
+
+	Answer:
+		-rbp: keeps the value of frame pointer
+		-rsp: keeps the value of stack pointer(from current frame)
+		-rip: instruction pointer
+
